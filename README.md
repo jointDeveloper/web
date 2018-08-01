@@ -15,6 +15,6 @@ _Somos una comunidad que busca despertar el interés de las mujeres y niñas en 
 
 ### Flujo de trabajo:
 
-* `release` rama principal. Cambios para el Servidor de Producción.
-* `dev` rama desarrollo. Cambios y pruebas. Cuando se tiene una versión considerada como estable se dispone fusionar con `release`
-* _Nota: La rama `dev` es una convención. Opcional se puede crear un branch con nombre referente a los cambios y fusionar con la rama `release`_
+* `master` rama principal. Cambios para el Servidor de Producción.
+* `dev` rama desarrollo. Cambios y pruebas. Cuando se tiene una versión considerada como estable se dispone fusionar con `master`
+* _Nota: La rama `dev` es una convención. Opcional se puede crear un branch con nombre referente a los cambios y fusionar con la rama `master`_
