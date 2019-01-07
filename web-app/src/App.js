@@ -1,25 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { members } from './members.json'
 
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      title: "jointDeveloper Web",
+      members
+    }
+  }
+
   render() {
+    const members = this.state.members.map((member, index) => {
+      let id = "member" + index.toString();
+      return (
+        <div>
+          <p key={id + "name"} className="font-subtitle">{member.name}</p>
+          <p key={id + "pic"} className="">{member.picture}</p>
+          <p key={id + "quote"} className="font-quote">"This is a quote"</p>
+          <p key={id + "highlighted"} className="font-highlighted-paragraph">{"This is another paragraph"}</p>
+        </div>
+      );
+    });
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h1 className="font-title">Miembros</h1>
+        { members }
       </div>
     );
   }
