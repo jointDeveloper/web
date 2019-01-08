@@ -1,5 +1,6 @@
 .SocialBar {
   z-index: 1000;
+  position: absolute;
 }
 
 .SocialBar a {

@@ -1,0 +1,18 @@
+.About {
+  height: 100vh;
+}
+
+.About #mision {
+  font-size: 30px;
+  padding: 30px;
+}
+
+.About .col {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.About #whatWeDo i {
+  font-size:20vh;
+}

@@ -9,7 +9,7 @@ class Header extends React.Component {
         <div className="row">
           <Nav />
         </div>
-        <div className="row">
+        <div className="row low-precedence">
           <div className="col">
             <img src={this.props.image} alt="" className="responsive-img" />
           </div>

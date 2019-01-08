@@ -3,6 +3,7 @@ import './App.css';
 import { members } from './members.json';
 import Header from './components/Header/Header';
 import SocialBar from './components/SocialBar/SocialBar';
+import About from './components/About/About';
 
 class App extends Component {
   constructor() {
@@ -29,6 +30,7 @@ class App extends Component {
       <div className="App">
         <SocialBar />
         <Header image="./images/jointDev.png" />
+        <About />
         <h1 className="font-title">Miembros</h1>
         { members }
       </div>

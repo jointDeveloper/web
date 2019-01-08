@@ -4,67 +4,67 @@
       "name" : "Facebook",
       "href" : "https://facebook.com/jointDeveloper",
       "a_class" : "facebook",
-      "i_class" : "fa fa-facebook"
+      "i_class" : "fab fa-facebook-f"
     },
     {
       "name" : "Twitter",
       "href" : "https://twitter.com/jointdev",
       "a_class" : "twitter",
-      "i_class" : "fa fa-twitter"
+      "i_class" : "fab fa-twitter"
     },
     {
       "name" : "Meetup",
       "href" : "https://www.meetup.com/es/jointDeveloper/",
       "a_class" : "meetup",
-      "i_class" : "fa fa-meetup"
+      "i_class" : "fab fa-meetup"
     },
     {
       "name" : "LinkedIn",
       "href" : "https://www.linkedin.com/company/16226960",
       "a_class" : "linkedin",
-      "i_class" : "fa fa-linkedin"
+      "i_class" : "fab fa-linkedin"
     },
     {
       "name" : "Instagram",
       "href" : "https://instagram.com/jointdeveloper",
       "a_class" : "instagram",
-      "i_class" : "fa fa-instagram"
+      "i_class" : "fab fa-instagram"
     },
     {
       "name" : "YouTube",
       "href" : "https://www.youtube.com/channel/UC1hMrYBNsvKnufvG8t6q7ZQ",
       "a_class" : "youtube-play",
-      "i_class" : "fa fa-youtube-play"
+      "i_class" : "fab fa-youtube"
     },
     {
       "name" : "Snapchat",
       "href" : "https://snapchat.com/add/jointDev",
       "a_class" : "snapchat-ghost",
-      "i_class" : "fa fa-snapchat-ghost"
+      "i_class" : "fab fa-snapchat-ghost"
     },
     {
       "name" : "GitHub",
       "href" : "https://github.com/jointDeveloper",
       "a_class" : "github-alt",
-      "i_class" : "fa fa-github-alt"
+      "i_class" : "fab fa-github-alt"
     },
     {
       "name" : "Medium",
       "href" : "https://medium.com/@jointdeveloper",
       "a_class" : "medium",
-      "i_class" : "fa fa-medium"
+      "i_class" : "fab fa-medium"
     },
     {
       "name" : "Slack",
       "href" : "https://jointdeveloper.slack.com",
       "a_class" : "slack",
-      "i_class" : "fa fa-slack"
+      "i_class" : "fab fa-slack"
     },
     {
       "name" : "Email",
       "href" : "mailto:developerjoint@gmail.com",
       "a_class" : "envelope",
-      "i_class" : "fa fa-envelope"
+      "i_class" : "fas fa-envelope"
     }
   ]
 }
