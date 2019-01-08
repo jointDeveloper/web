@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { members } from './members.json';
 import Header from './components/Header/Header';
+import SocialBar from './components/SocialBar/SocialBar';
 
 class App extends Component {
   constructor() {
@@ -26,6 +27,7 @@ class App extends Component {
     });
     return (
       <div className="App">
+        <SocialBar />
         <Header image="./images/jointDev.png" />
         <h1 className="font-title">Miembros</h1>
         { members }
