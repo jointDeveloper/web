@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
-import { members } from './members.json'
+import { members } from './members.json';
+import Header from './components/Header/Header';
 
 class App extends Component {
   constructor() {
@@ -25,6 +26,7 @@ class App extends Component {
     });
     return (
       <div className="App">
+        <Header image="./images/jointDev.png" />
         <h1 className="font-title">Miembros</h1>
         { members }
       </div>

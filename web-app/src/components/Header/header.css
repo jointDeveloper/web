@@ -1,0 +1,19 @@
+.Header {
+  position: relative;
+  width: auto;
+  height: 100vh;
+  background-image: url(../../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  background-color: #777;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.Header img {
+  width: auto;
+  height: 50vh;
+}
