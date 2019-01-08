@@ -1,10 +1,14 @@
 import React from 'react';
-import './header.css';
+import './Header.css';
+import Nav from '../NavBar/Nav';
 
 class Header extends React.Component {
   render() {
     return (
       <div className="Header container-fluid">
+        <div className="row">
+          <Nav />
+        </div>
         <div className="row">
           <div className="col">
             <img src={this.props.image} alt="" className="responsive-img" />

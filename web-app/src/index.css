@@ -10,3 +10,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.text-navy {
+  color: #000080;
+}
+
+.text-pink-yarrow {
+  color: #CE3175;
+}
