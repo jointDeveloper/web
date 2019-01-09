@@ -23,7 +23,7 @@ class Header extends React.Component {
 
     const items = whatWeDo.map((item, index) => {
       return (
-        <div className="col">
+        <div className="col" key={index + "whatWeDo"}>
           <div className="row">
             <h3 className="text-smoke-white">{item.title}</h3>
           </div>

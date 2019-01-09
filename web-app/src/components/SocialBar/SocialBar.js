@@ -14,8 +14,8 @@ class SocialBar extends React.Component {
     const items = this.state.items.map((item, index) => {
       let id = "item" + index.toString();
       return (
-        <div>
-          <li key={id + "li"}><a href={item.href} className={item.a_class} target="_blank">
+        <div key={index + "social"}>
+          <li key={id + "li"}><a href={item.href} className={item.a_class} target="_blank" rel="noopener noreferrer">
             <i className={item.i_class} aria-hidden="true"></i><span>{item.name}</span>
           </a></li>
         </div>
