@@ -1,0 +1,23 @@
+.Contact {
+  height: 100vh;
+}
+
+.Contact #utp {
+  width: 20vh;
+  height: auto;
+}
+
+.Contact #sirius {
+  width: 30vh;
+  height: auto;
+}
+
+.Contact #left {
+  padding-left: 15vh;
+  /* padding-top: 15vh; */
+}
+
+.Contact #right {
+  padding-right: 15vh;
+  /* padding-top: 15vh; */
+}
