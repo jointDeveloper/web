@@ -6,7 +6,7 @@ class Nav extends React.Component {
     return (
       <div className="Nav">
         <nav className="navbar fixed-top">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand" href="/">
             <h1 className="font-title"><span className="text-navy">joint</span><span className="text-pink-yarrow">Dev</span></h1>
           </a>
           <div className="content text-white">

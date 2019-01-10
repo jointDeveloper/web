@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 import './Discover.css';
 
 class Discover extends Component {
@@ -8,32 +9,32 @@ class Discover extends Component {
       {
         "title":"Integrantes",
         "icon":"fas fa-users",
-        "href":"#"
+        "href":"/members"
       },
       {
         "title":"Galería de fotos",
         "icon":"fas fa-images",
-        "href":"#"
+        "href":"/photoGallery"
       },
       {
         "title":"Eventos",
         "icon":"fas fa-calendar-day",
-        "href":"#"
+        "href":"/events"
       },
       {
         "title":"Blog",
         "icon":"fab fa-blogger",
-        "href":"#"
+        "href":"/blog"
       }
     ];
 
     const items = discoverData.map((item, index) => {
       return (
         <div className="col" key={index + "discover"}>
-          <a href={item.href}>
+          <Link to={item.href}>
             <h2 className="text-smoke-white">{item.title}</h2>
             <i className={"text-smoke-white " + item.icon}></i>
-          </a>
+          </Link>
         </div>
       )
     });
