@@ -30,18 +30,20 @@ class Discover extends Component {
 
     const items = discoverData.map((item, index) => {
       return (
-        <div className="col" key={index + "discover"}>
+        <div className="col discover-item" key={index + "discover"}>
           <Link to={item.href}>
-            <h2 className="text-smoke-white">{item.title}</h2>
-            <i className={"text-smoke-white " + item.icon}></i>
+            <h2 className="text-smoke-white text-center">{item.title}</h2>
+            <div className="d-flex justify-content-center">
+              <i className={"text-smoke-white " + item.icon}></i>
+            </div>
           </Link>
         </div>
       )
     });
 
     return (
-      <div className="Discover container-fluid bg-flame" id="discover">
-        <div className="row align-middle">
+      <div className="Discover container-fluid bg-flame d-flex flex-row justify-content-center" id="discover">
+        <div className="row align-self-center">
           {items}
         </div>
       </div>

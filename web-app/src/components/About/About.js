@@ -23,9 +23,9 @@ class Header extends React.Component {
 
     const items = whatWeDo.map((item, index) => {
       return (
-        <div className="col" key={index + "whatWeDo"}>
+        <div className="col d-flex justify-content-center what-we-do" key={index + "whatWeDo"}>
           <div className="row">
-            <h3 className="text-smoke-white">{item.title}</h3>
+            <h3 className="text-smoke-white text-center">{item.title}</h3>
           </div>
           <div className="row">
             <i className={"text-smoke-white " + item.icon}></i>
@@ -45,9 +45,9 @@ class Header extends React.Component {
           </div>
         </div>
 
-        <h1 className="font-subtitle text-center text-smoke-white">¿Qué hacemos?</h1>
+        <h1 className="font-subtitle text-center text-smoke-white font-weight-bold">¿Qué hacemos?</h1>
 
-        <div className="row" id="whatWeDo">
+        <div className="row" id="what-we-do-row-container">
           {items}
         </div>
 

@@ -9,3 +9,7 @@
 .Discover a {
   text-decoration: none;
 }
+
+.Discover .discover-item {
+  padding: 10vh;
+}
