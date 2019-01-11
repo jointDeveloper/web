@@ -8,6 +8,8 @@ class Contact extends React.Component {
       <div className="Contact bg-smoke" id="contact">
         <footer className="page-footer font-small teal pt-4">
 
+          <div className="" id="up-container">
+
             <div className="container-fluid text-center text-md-left">
 
               <div className="row">
@@ -31,7 +33,7 @@ class Contact extends React.Component {
                   </div>
 
                   <div className="row">
-                    <div className="col">
+                    <div className="col" id="utp-container">
                       <a href="https://www.utp.edu.co">
                         <img src={this.props.utp_img} alt="" className="responsive-img" id="utp" />
                       </a>
@@ -59,8 +61,10 @@ class Contact extends React.Component {
               </div>
 
             </div>
+            </div>
 
-            <div className="footer-copyright text-center py-3">© Todos los derechos reservados
+            <div className="" id="down-container">
+              <div className="footer-copyright text-center py-3">© Todos los derechos reservados</div>
             </div>
 
           </footer>

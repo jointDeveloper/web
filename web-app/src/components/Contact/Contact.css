@@ -1,5 +1,21 @@
 .Contact {
-  height: 100vh;
+  min-height: 100vh;
+  height: 100%;
+  padding: 15vh 15vh 0vh 15vh;
+}
+
+.Contact #left .row {
+  padding-bottom: 5vh;
+}
+
+.Contact #utp-container,
+.Contact #sirius-container {
+  width: 10vh;
+  height: auto;
+}
+
+.Contact #utp-container {
+  max-width: 25vh;
 }
 
 .Contact #utp {
@@ -12,12 +28,6 @@
   height: auto;
 }
 
-.Contact #left {
-  padding-left: 15vh;
-  /* padding-top: 15vh; */
-}
-
-.Contact #right {
-  padding-right: 15vh;
-  /* padding-top: 15vh; */
+.Contact #up-container {
+  height: 100vh;
 }
