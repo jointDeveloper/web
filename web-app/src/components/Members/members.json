@@ -2,7 +2,7 @@
   "members": [
     {
       "name": "Carolina Jiménez",
-      "info": "Software Engineer - Co founder jointDeveloper",
+      "info": "Desarrolladora de Software - Co fundadora de jointDeveloper",
       "picture": "images/members/cjg.jpg",
       "github": "https://github.com/carolinajimenez26",
       "linkedin": "https://www.linkedin.com/in/carolinajimenez26/"
@@ -36,14 +36,21 @@
       "linkedin": "https://www.linkedin.com/in/zoraida-gutierrez-7a7301114/"
     },
     {
-      "name": "Natalia Castaño Betancurt",
+      "name": "Natalia Castaño",
       "picture": "images/members/nata.jpg",
       "info": "Estudiante de Licenciatura en Pedagogía Infantil de la Universidad Tecnológica de Pereira. Me gusta el empoderamiento de mujeres, enseñar y aprender",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/natalia-castano-betancurt-7b8b72178"
     },
     {
-      "name": "Member",
+      "name": "Melissa Escobar",
+      "picture": "images/members/meli.jpg",
+      "info": "Estudiante de Ingeniería de Sistemas y Computación. Amante de la vida. Apasionada por las matemáticas, los libros, la música y la naturaleza",
+      "github": "https://github.com/MelissaEscobar",
+      "linkedin": ""
+    },
+    {
+      "name": "Member ",
       "picture": "",
       "info": "",
       "github": "",
