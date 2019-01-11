@@ -2,6 +2,44 @@ import React from 'react';
 import './Nav.css';
 
 class Nav extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      isTop: true
+    };
+  }
+
+  componentDidMount() {
+    document.addEventListener('scroll', this.trackScrolling);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('scroll', this.trackScrolling);
+  }
+
+  trackScrolling = () => {
+    const isTop = window.scrollY < 100;
+    if (isTop !== this.state.isTop) {
+      this.setState({ isTop }, () => {
+        let wrappedElement = document.getElementsByClassName('navbar')[0];
+        let classNameElement = wrappedElement.className;
+        let classNameArray = classNameElement.split(" ");
+
+        if (!this.state.isTop) {
+          if (!classNameArray.includes("scrolled")) classNameElement += " scrolled";
+        } else {
+          if (classNameArray.includes("scrolled")) {
+            classNameArray.splice(-1, 1);
+            classNameElement = classNameArray.join(" ");
+          }
+        }
+        wrappedElement.className = classNameElement;
+      });
+    }
+
+
+  };
+
   render() {
     return (
       <div className="Nav">
