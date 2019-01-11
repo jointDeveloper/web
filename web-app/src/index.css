@@ -23,8 +23,16 @@ code {
   color: #f5f5f5;
 }
 
+.text-flame {
+  color: #e2b822;
+}
+
 .bg-navy {
   background-color: #000080;
+}
+
+.bg-navy-light {
+  background-color: #5050d0;
 }
 
 .bg-pink-yarrow {

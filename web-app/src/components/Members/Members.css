@@ -1,0 +1,30 @@
+.Members {
+  height: 100%;
+  padding: 15vh;
+}
+
+.Members h1 {
+  padding-bottom: 5vh;
+}
+
+.Members .member-pic {
+  height: 30vh;
+  width: 30vh;
+  object-fit: cover;
+  object-position: 0% 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Members i {
+  font-size: 5vh;
+}
+
+.Members .member-row {
+  margin-top: 5vh;
+}
+
+.Members #linkedin {
+  margin-right: 2vh;
+}
