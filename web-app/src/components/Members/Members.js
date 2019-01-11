@@ -15,14 +15,14 @@ class Members extends Component {
     let members = this.state.members.map((member, index) => {
       return (
         <div className="col" key={index + "member"}>
-          <img className="member-pic rounded-circle img-responsive" src={ member.picture != "" ? member.picture : this.state.userPicture } />
+          <img className="member-pic rounded-circle img-responsive" alt="" src={ member.picture !== "" ? member.picture : this.state.userPicture } />
           <p className="member-name text-white font-weight-bold text-center">{member.name}</p>
           <p className="member-info text-white text-center">{member.info}</p>
           <div className="row d-flex justify-content-center">
-            { member.linkedin != "" ? (<a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-white" id="linkedin">
+            { member.linkedin !== "" ? (<a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-white" id="linkedin">
                                         <i className="fab fa-linkedin" aria-hidden="true"></i>
                                        </a>) : null }
-            { member.github != "" ? (<a href={member.github} target="_blank" rel="noopener noreferrer" className="text-white">
+            { member.github !== "" ? (<a href={member.github} target="_blank" rel="noopener noreferrer" className="text-white">
                                        <i className="fab fa-github-alt" aria-hidden="true"></i>
                                      </a>) : null }
           </div>
