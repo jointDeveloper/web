@@ -1,0 +1,28 @@
+{
+  "events": [
+    {
+      "title": "NodeSchool",
+      "date": "5 de Noviembre del 2016",
+      "cover_picture_name": "cover.jpg",
+      "images_src": "images/events/nodeschool"
+    },
+    {
+      "title": "HTML/CSS Avanzado",
+      "date": "15 de Octubre del 2016",
+      "cover_picture_name": "cover.jpg",
+      "images_src": "images/events/htmlcssavanzado"
+    },
+    {
+      "title": "Materialize",
+      "date": "2016",
+      "cover_picture_name": "cover.jpg",
+      "images_src": "images/events/materialize"
+    },
+    {
+      "title": "jointDeveloper KIDS",
+      "date": "23 de Noviembre del 2016",
+      "cover_picture_name": "cover.jpg",
+      "images_src": "images/events/jointdevkids"
+    }
+  ]
+}

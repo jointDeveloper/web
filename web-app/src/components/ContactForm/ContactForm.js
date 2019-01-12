@@ -25,7 +25,7 @@ class ContactForm extends React.Component {
 
     return (
       <div className="ContactForm">
-        <form>
+        <form action="mailto:developerjoint@gmail.com" method="post" encType="text/plain">
           {items}
           <div className="form-group">
             <textarea className="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
