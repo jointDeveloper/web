@@ -1,15 +1,6 @@
 import app from 'firebase/app';
 import 'firebase/storage';
 
-// Initialize Firebase
-// const config = {
-//   apiKey: "AIzaSyBLYiaPCg_V_rI0taqDJU4jX-F-fhQbd74",
-//   authDomain: "jointdev-web.firebaseapp.com",
-//   databaseURL: "https://jointdev-web.firebaseio.com",
-//   projectId: "jointdev-web",
-//   storageBucket: "jointdev-web.appspot.com",
-//   messagingSenderId: "151885305104"
-// };
 const config = {
   apiKey: process.env.REACT_APP_API_KEY,
   authDomain: process.env.REACT_APP_AUTH_DOMAIN,
