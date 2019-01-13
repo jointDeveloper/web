@@ -2,25 +2,34 @@ import React from 'react';
 import './photoGallery.css';
 import { events } from './events.json';
 import Carousel from '../Carousel/Carousel';
-import listReactFiles from 'list-react-files';
 
 class photoGallery extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       events
     }
   }
 
   componentDidMount() {
-    console.log("did mount");
-    listReactFiles(__dirname).then(files => console.log("----->" + files));
+    // Create a reference with an initial file path and name
+    let storage = this.props.firebase.getStorage();
+    let pathReference = storage.ref('events/jointdevkids/cover.jpg');
+
+    pathReference.getDownloadURL().then(function(url) {
+             var test = url;
+             console.log(url);
+             let img = document.getElementById('img');
+             img.src = test;
+         }).catch(function(error) {
+           console.log(error);
+         });
+    console.log(pathReference);
+    console.log(pathReference.getDownloadURL());
   }
 
   render() {
     let events = this.state.events.map((event, index) => {
-      let __dirname = event.images_src;
-      listReactFiles(__dirname).then(files => console.log("----->" + files));
       return (
         <p>{event.title}</p>
       );
@@ -30,6 +39,7 @@ class photoGallery extends React.Component {
       <div className="photoGallery bg-flame">
         <h1 className="font-subtitle text-center text-white">Galería de Fotos</h1>
         <Carousel images={[]} />
+        <img src="test" height="125px" width="200px" id="img" />
       </div>
     );
   }

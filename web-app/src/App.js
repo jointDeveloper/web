@@ -9,6 +9,7 @@ import Members from './components/Members/Members';
 import photoGallery from './components/photoGallery/photoGallery';
 import Events from './components/Events/Events';
 import Blog from './components/Blog/Blog';
+import { withFirebase } from './components/Firebase';
 
 class App extends Component {
   render() {
@@ -20,7 +21,7 @@ class App extends Component {
 
           <Route exact path="/" component={ Home } />
           <Route path="/members" component={ Members } />
-          <Route path="/photoGallery" component={ photoGallery } />
+          <Route path="/photoGallery" component={ withFirebase(photoGallery) } />
           <Route path="/events" component={ Events } />
           <Route path="/blog" component={ Blog } />
 
