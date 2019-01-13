@@ -3,3 +3,48 @@
   min-height: 100vh;
   padding: 15vh;
 }
+
+.photoGallery .event-pic {
+  height: 30vh;
+  width: 30vh;
+  object-fit: cover;
+  object-position: 0% 0;
+}
+
+.photoGallery h1 {
+  padding-bottom: 15vh;
+}
+
+.photoGallery .image-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.photoGallery .image-container:hover {
+  cursor: pointer;
+}
+
+.photoGallery .image-container img:hover {
+  filter: brightness(50%);
+}
+
+.photoGallery .text-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.photoGallery .hide {
+  display: none;
+}
+
+.photoGallery .show {
+  display: block;
+}
+
+.photoGallery .event-date {
+  font-size: 2vh;
+}

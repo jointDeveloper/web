@@ -7,31 +7,98 @@ class photoGallery extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      events
+      events: []
     }
+    this.addClassName = this.addClassName.bind(this);
+    this.removeClassName = this.removeClassName.bind(this);
+    this.onMouseOver = this.onMouseOver.bind(this);
   }
 
   componentDidMount() {
-    // Create a reference with an initial file path and name
-    let storage = this.props.firebase.getStorage();
-    let pathReference = storage.ref('events/jointdevkids/cover.jpg');
+    this.getCoverPhotos();
+    window.addEventListener('mousemove', this.onMouseOver);
+  }
 
-    pathReference.getDownloadURL().then(function(url) {
-             var test = url;
-             console.log(url);
-             let img = document.getElementById('img');
-             img.src = test;
-         }).catch(function(error) {
-           console.log(error);
-         });
-    console.log(pathReference);
-    console.log(pathReference.getDownloadURL());
+  componentWillUnmount() {
+    this.setState({ events: [] });
+    window.removeEventListener('mousemove', this.onMouseOver);
+  }
+
+  getCoverPhotos() {
+    let storage = this.props.firebase.getStorage();
+
+    events.map((event, index) => {
+      let converPath = event.images_src + 'cover.jpg';
+      let pathReference = storage.ref(converPath);
+
+      pathReference.getDownloadURL().then((url) => {
+        event.imageSrc = url;
+        this.setState({
+          events: [...this.state.events, event]
+        });
+      }).catch((error) => {
+        console.error(error);
+      });
+    });
+  }
+
+  onMouseOver() {
+    let imageEvent = document.getElementsByClassName('image-container');
+    for (let i = 0; i < imageEvent.length; i++) {
+      console.log(imageEvent[i]);
+      imageEvent[i].addEventListener('mouseover', (event) => {
+        // console.log(imageEvent[i].childNodes[1]);
+        this.removeClassName(imageEvent[i].childNodes[1], "hide");
+        this.addClassName(imageEvent[i].childNodes[1], "show");
+      });
+
+      imageEvent[i].addEventListener('mouseout', (event) => {
+        // console.log(imageEvent[i].childNodes[1]);
+        this.removeClassName(imageEvent[i].childNodes[1], "show");
+        this.addClassName(imageEvent[i].childNodes[1], "hide");
+      });
+    }
+  }
+
+  addClassName(element, className) {
+    console.log("addClassName");
+    let classNameElement = element.className;
+    let classNameArray = classNameElement.split(" ");
+    console.log(classNameArray);
+
+    if (!classNameArray.includes(className)) {
+      console.log("gonna add");
+      classNameElement += " " + className;
+      element.className = classNameElement;
+    }
+  }
+
+  removeClassName(element, className) {
+    console.log("removeClassName");
+    let classNameElement = element.className;
+    let classNameArray = classNameElement.split(" ");
+    console.log(classNameArray);
+
+    if (classNameArray.includes(className)) {
+      console.log("gonna remove");
+      classNameArray.splice(-1, 1);
+      classNameElement = classNameArray.join(" ");
+      element.className = classNameElement;
+    }
   }
 
   render() {
-    let events = this.state.events.map((event, index) => {
+    let eventsItems = this.state.events.map((event, index) => {
       return (
-        <p>{event.title}</p>
+        <div className="col" key={"eventsItem" + index}>
+          <div className="text-center image-container">
+            <img className="event-pic img-responsive rounded" alt="" src={ event.imageSrc } />
+            <div className="text-centered font-weight-bold info-container hide">
+              <p>{ event.title }</p>
+              <p className="event-date">{ event.date }</p>
+            </div>
+          </div>
+        </div>
       );
     });
 
@@ -39,7 +106,9 @@ class photoGallery extends React.Component {
       <div className="photoGallery bg-flame">
         <h1 className="font-subtitle text-center text-white">Galería de Fotos</h1>
         <Carousel images={[]} />
-        <img src="test" height="125px" width="200px" id="img" />
+        <div className="row">
+          { eventsItems }
+        </div>
       </div>
     );
   }
