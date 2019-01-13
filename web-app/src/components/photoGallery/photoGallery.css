@@ -48,3 +48,7 @@
 .photoGallery .event-date {
   font-size: 2vh;
 }
+
+.photoGallery .event-row {
+  margin-top: 5vh;
+}

@@ -45,7 +45,7 @@ class photoGallery extends React.Component {
   onMouseOver() {
     let imageEvent = document.getElementsByClassName('image-container');
     for (let i = 0; i < imageEvent.length; i++) {
-      console.log(imageEvent[i]);
+      // console.log(imageEvent[i]);
       imageEvent[i].addEventListener('mouseover', (event) => {
         // console.log(imageEvent[i].childNodes[1]);
         this.removeClassName(imageEvent[i].childNodes[1], "hide");
@@ -102,13 +102,26 @@ class photoGallery extends React.Component {
       );
     });
 
+    let eventsItemsAux = [];
+    let max, size = eventsItems.length;
+    for (let i = 0; i < size; i += 4) {
+      max = eventsItems.length < 4 ? eventsItems.length : 4;
+      eventsItemsAux.push(eventsItems.splice(0, max));
+    }
+
+    const rowsOfEvents = eventsItemsAux.map((eventRow, index) => {
+      return (
+        <div className="row event-row" key={index + "eventRow"}>
+          { eventRow }
+        </div>
+      );
+    });
+
     return (
       <div className="photoGallery bg-flame">
         <h1 className="font-subtitle text-center text-white">Galería de Fotos</h1>
         <Carousel images={[]} />
-        <div className="row">
-          { eventsItems }
-        </div>
+        { rowsOfEvents }
       </div>
     );
   }
