@@ -14,7 +14,7 @@ class Members extends Component {
   render() {
     let members = this.state.members.map((member, index) => {
       return (
-        <div className="col" key={index + "member"}>
+        <div className="col member-container" key={index + "member"}>
           <img className="member-pic rounded-circle img-responsive" alt="" src={ member.picture !== "" ? member.picture : this.state.userPicture } />
           <p className="member-name text-white font-weight-bold text-center">{member.name}</p>
           <p className="member-info text-white text-center">{member.info}</p>
@@ -32,8 +32,8 @@ class Members extends Component {
 
     let membersAux = [];
     let max, size = members.length;
-    for (let i = 0; i < size; i += 3) {
-      max = members.length < 3 ? members.length : 3;
+    for (let i = 0; i < size; i += 4) {
+      max = members.length < 4 ? members.length : 4;
       membersAux.push(members.splice(0, max));
     }
 

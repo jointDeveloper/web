@@ -28,3 +28,8 @@
 .Members #linkedin {
   margin-right: 2vh;
 }
+
+.Members .member-container {
+  /* max-width: 40vh;
+  margin-right: 7vh; */
+}

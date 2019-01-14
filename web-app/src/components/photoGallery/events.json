@@ -1,29 +1,34 @@
 {
   "events": [
     {
-      "title": "NodeSchool",
-      "date": "5 de Noviembre del 2016",
-      "images_src": "images/events/2016/nodeschool/"
-    },
-    {
       "title": "HTML/CSS Avanzado",
       "date": "15 de Octubre del 2016",
-      "images_src": "images/events/2016/htmlcssavanzado/"
-    },
-    {
-      "title": "Materialize",
-      "date": "2016",
-      "images_src": "images/events/2016/materialize/"
+      "images_src": "images/events/2016/htmlcssavanzado/",
+      "items": "3"
     },
     {
       "title": "jointDeveloper KIDS",
       "date": "23 de Noviembre del 2016",
-      "images_src": "images/events/2016/jointdevkids/"
+      "images_src": "images/events/2016/jointdevkids/",
+      "items": "12"
     },
     {
-      "title": "Jornada de Ingenierías (U Caldas)",
-      "date": "Noviembre del 2017",
-      "images_src": "images/events/2017/ucaldas/"
+      "title": "Grace Hopper Celebration",
+      "date": "Octubre del 2016",
+      "images_src": "images/events/2016/ghc/",
+      "items": "2"
+    },
+    {
+      "title": "Materialize",
+      "date": "2016",
+      "images_src": "images/events/2016/materialize/",
+      "items": "5"
+    },
+    {
+      "title": "NodeSchool",
+      "date": "5 de Noviembre del 2016",
+      "images_src": "images/events/2016/nodeschool/",
+      "items": "9"
     }
   ]
 }

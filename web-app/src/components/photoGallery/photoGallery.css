@@ -52,3 +52,7 @@
 .photoGallery .event-row {
   margin-top: 5vh;
 }
+
+.photoGallery .info-container {
+  max-width: 30vh;
+}

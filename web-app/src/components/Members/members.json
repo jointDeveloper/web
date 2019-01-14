@@ -23,8 +23,8 @@
     },
     {
       "name": "Eliana Osorio",
-      "picture": "",
-      "info": "",
+      "picture": "images/members/eli.jpg",
+      "info": "Estudiante de Ingeniería de Sistemas y Computación",
       "github": "https://github.com/ElianaO",
       "linkedin": "https://www.linkedin.com/in/elianaosorior"
     },
@@ -47,13 +47,6 @@
       "picture": "images/members/meli.jpg",
       "info": "Estudiante de Ingeniería de Sistemas y Computación. Amante de la vida. Apasionada por las matemáticas, los libros, la música y la naturaleza",
       "github": "https://github.com/MelissaEscobar",
-      "linkedin": ""
-    },
-    {
-      "name": "Member ",
-      "picture": "",
-      "info": "",
-      "github": "",
       "linkedin": ""
     }
   ]
