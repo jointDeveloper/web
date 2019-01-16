@@ -29,19 +29,19 @@ class photoGallery extends React.Component {
   getCoverPhotos() {
     let storage = this.props.firebase.getStorage();
 
-    events.map((event, index) => {
-      let converPath = event.images_src + 'cover.jpg';
+    for (let i = 0; i < events.length; i++) {
+      let converPath = events[i].images_src + 'cover.jpg';
       let pathReference = storage.ref(converPath);
 
       pathReference.getDownloadURL().then((url) => {
-        event.imageSrc = url;
+        events[i].imageSrc = url;
         this.setState({
-          events: [...this.state.events, event]
+          events: [...this.state.events, events[i]]
         });
       }).catch((error) => {
         console.error(error);
       });
-    });
+    }
   }
 
   onMouseOver() {

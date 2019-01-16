@@ -29,6 +29,102 @@
       "date": "5 de Noviembre del 2016",
       "images_src": "images/events/2016/nodeschool/",
       "items": "9"
+    },
+    {
+      "title": "Fundamentos de Android y Django Channels",
+      "date": "2 de Septiembre del 2017",
+      "images_src": "images/events/2017/androiddjango/",
+      "items": "2"
+    },
+    {
+      "title": "Realidad Aumentada y Union de Android + Arduino",
+      "date": "25 de Noviembre del 2017",
+      "images_src": "images/events/2017/androidvr/",
+      "items": "4"
+    },
+    {
+      "title": "Apropiación Social",
+      "date": "Noviembre y Octubre del 2017",
+      "images_src": "images/events/2017/apropiacion/",
+      "items": "18"
+    },
+    {
+      "title": "Grace Hopper Celebration",
+      "date": "Septiembre del 2017",
+      "images_src": "images/events/2017/ghc/",
+      "items": "5"
+    },
+    {
+      "title": "Colegio Hans Drews Arango",
+      "date": "2017",
+      "images_src": "images/events/2017/hansdrewsarango/",
+      "items": "7"
+    },
+    {
+      "title": "Introducción a Johnny Five",
+      "date": "14 de Octubre del 2017",
+      "images_src": "images/events/2017/johnnyfive/",
+      "items": "3"
+    },
+    {
+      "title": "Rails Girls",
+      "date": "3 de Abril del 2017",
+      "images_src": "images/events/2017/railsgirls/",
+      "items": "3"
+    },
+    {
+      "title": "ScaleConf",
+      "date": "Marzo del 2017",
+      "images_src": "images/events/2017/scaleconf/",
+      "items": "3"
+    },
+    {
+      "title": "Proyecto Solidaridad",
+      "date": "2017",
+      "images_src": "images/events/2017/solidaridad/",
+      "items": "12"
+    },
+    {
+      "title": "Jornada de Ingenierías (U Caldas)",
+      "date": "Noviembre del 2017",
+      "images_src": "images/events/2017/ucaldas/",
+      "items": "9"
+    },
+    {
+      "title": "Aprendiendo a hacer un artículo científico",
+      "date": "30 de Mayo del 2018",
+      "images_src": "images/events/2018/articulocientifico/",
+      "items": "3"
+    },
+    {
+      "title": "Taller Laboratorio Circuito Sonoro",
+      "date": "28 de Abril del 2018",
+      "images_src": "images/events/2018/circuitosonoro/",
+      "items": "5"
+    },
+    {
+      "title": "Encuentros Semilleros",
+      "date": "2018",
+      "images_src": "images/events/2018/encuentrosemilleros/",
+      "items": "9"
+    },
+    {
+      "title": "Enfoque de Género para Principiantes",
+      "date": "8 de Marzo del 2018",
+      "images_src": "images/events/2018/enfoquegenero/",
+      "items": "4"
+    },
+    {
+      "title": "Comportamiento no Verbal",
+      "date": "24 de Febrero del 2018",
+      "images_src": "images/events/2018/noverbal/",
+      "items": "6"
+    },
+    {
+      "title": "Python para no programadores e Introducción a Django",
+      "date": "28 de Noviembre del 2018",
+      "images_src": "images/events/2018/pythondjango/",
+      "items": "5"
     }
   ]
 }
