@@ -1,11 +1,14 @@
 .Events {
   height: 100%;
-  min-height: 100vh;
   padding: 15vh;
 }
 
 .Events h1 {
   padding-bottom: 5vh;
+}
+
+.Events .calendar-container {
+  padding-bottom: 10vh;
 }
 
 .Events .rbc-calendar .rbc-btn-group button,
