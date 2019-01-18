@@ -1,4 +1,33 @@
 .Events {
   height: 100%;
   min-height: 100vh;
+  padding: 15vh;
+}
+
+.Events h1 {
+  padding-bottom: 5vh;
+}
+
+.Events .rbc-calendar .rbc-btn-group button,
+.Events .rbc-calendar .rbc-off-range {
+  color: white;
+}
+
+.Events .rbc-calendar .rbc-btn-group button:hover {
+  background-color: rgb(226,184,34) !important;
+  cursor: pointer;
+}
+
+.Events .rbc-calendar .rbc-active,
+.Events .rbc-calendar .rbc-off-range-bg {
+  background-color: rgba(255,255,255,.3);
+}
+
+.Events .rbc-calendar .rbc-today {
+  border-style: double;
+  background-color: #e2b822;
+}
+
+.Events .rbc-calendar .rbc-event {
+  background-color: rgb(0,0,128,.6);
 }
