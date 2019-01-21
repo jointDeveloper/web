@@ -6,8 +6,33 @@ class Members extends Component {
   constructor() {
     super();
     this.state = {
-      members,
-      userPicture: "images/members/user.png"
+      members: []
+    }
+  }
+
+  componentDidMount() {
+    this.getUserPhotos();
+  }
+
+  componentWillUnmount() {
+    this.setState({ members: [] });
+  }
+
+  getUserPhotos = () => {
+    let storage = this.props.firebase.getStorage();
+
+    for (let i = 0; i < members.length; i++) {
+      let image = members[i].image_src === "" ? "images/members/user.png" : members[i].image_src;
+      let pathReference = storage.ref(image);
+
+      pathReference.getDownloadURL().then((url) => {
+        members[i].image_url = url || "";
+        this.setState({
+          members: [...this.state.members, members[i]]
+        });
+      }).catch((error) => {
+        console.error(error);
+      });
     }
   }
 
@@ -15,7 +40,7 @@ class Members extends Component {
     let members = this.state.members.map((member, index) => {
       return (
         <div className="col member-container" key={index + "member"}>
-          <img className="member-pic rounded-circle img-responsive" alt="" src={ member.picture !== "" ? member.picture : this.state.userPicture } />
+          <img className="member-pic rounded-circle img-responsive" alt="" src={ member.image_url } />
           <p className="member-name text-white font-weight-bold text-center">{member.name}</p>
           <p className="member-info text-white text-center">{member.info}</p>
           <div className="row d-flex justify-content-center">

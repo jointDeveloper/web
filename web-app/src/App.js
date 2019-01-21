@@ -14,13 +14,13 @@ import { withFirebase } from './components/Firebase';
 class App extends Component {
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="web">
         <div className="App">
           <SocialBar />
           <Header image="./images/jointDev.png" />
 
           <Route exact path="/" component={ Home } />
-          <Route path="/members" component={ Members } />
+          <Route path="/members" component={ withFirebase(Members) } />
           <Route path="/photoGallery" component={ withFirebase(photoGallery) } />
           <Route path="/events" component={ Events } />
           <Route path="/blog" component={ Blog } />
