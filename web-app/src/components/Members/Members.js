@@ -46,7 +46,7 @@ class Members extends Component {
     });
 
     return (
-      <div className="Members bg-navy-light">
+      <div className="Members bg-navy">
         <div className="row d-flex justify-content-center">
           <h1 className="font-title text-white">Miembros</h1>
         </div>

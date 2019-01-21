@@ -1,0 +1,22 @@
+.Blog {
+  height: 100%;
+  padding: 15vh;
+}
+
+.Blog h1 {
+  padding-bottom: 5vh;
+}
+
+.Blog .card {
+  margin: 5vh;
+  border-style: outset;
+}
+
+.Blog .btn-primary {
+  border-color: #000080;
+}
+
+.Blog .card a:hover {
+  border-color: white;
+  background-color: rgba(0,0,128,.3);
+}
