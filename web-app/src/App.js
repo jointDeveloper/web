@@ -14,7 +14,7 @@ import { withFirebase } from './components/Firebase';
 class App extends Component {
   render() {
     return (
-      <Router basename="web">
+      <Router>
         <div className="App">
           <SocialBar />
           <Header image="./images/jointDev.png" />

@@ -25,8 +25,7 @@ class Blog extends React.Component {
     });
   }
 
-  setPosts = response => {
-    console.log(response);
+  setPosts = (response) => {
     this.setState({
       posts: response
     });
@@ -41,7 +40,7 @@ class Blog extends React.Component {
             <div className="card-body">
               <h5 className="card-title font-quote">{post.title}</h5>
               <p className="card-text">{post.description}</p>
-              <a href={post.url} className="btn btn-primary bg-navy font-weight-bold">Leer</a>
+              <a href={post.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary bg-navy font-weight-bold">Leer</a>
             </div>
           </div>
         </div>

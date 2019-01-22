@@ -10,6 +10,10 @@ class SocialBar extends React.Component {
     }
   }
 
+  componentWillUnmount() {
+    this.setState({ items: [] });
+  }
+
   render () {
     const items = this.state.items.map((item, index) => {
       let id = "item" + index.toString();

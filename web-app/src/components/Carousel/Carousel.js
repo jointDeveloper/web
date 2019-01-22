@@ -7,7 +7,6 @@ class Carousel extends React.Component {
     this.state = {
       carouselImages: []
     }
-    this.updateCarouselImages = this.updateCarouselImages.bind(this);
   }
 
   componentWillUnmount() {
@@ -20,8 +19,7 @@ class Carousel extends React.Component {
     }
   }
 
-  async updateCarouselImages(newImages) {
-    console.log("updateCarouselImages");
+  updateCarouselImages = async (newImages) => {
     let storage = this.props.firebase.getStorage();
     await this.setState({ carouselImages: [] });
 
@@ -31,7 +29,7 @@ class Carousel extends React.Component {
       pathReference.getDownloadURL().then((url) => {
         this.setState({
           carouselImages: [...this.state.carouselImages, url]
-        }, () => console.log("carouselImages updated : " , this.state.carouselImages));
+        });
       }).catch((error) => {
         console.error(error);
       });
@@ -39,7 +37,6 @@ class Carousel extends React.Component {
   }
 
   render() {
-    // console.log("From Carousel: ", this.props.images);
     let images = this.state.carouselImages.map((image, index) => {
       let classNameAux = "carousel-item";
       classNameAux += index === 0 ? " active" : "";
