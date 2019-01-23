@@ -1,6 +1,8 @@
 .Blog {
   height: 100%;
   padding: 15vh;
+  background: url(../../images/forma-redes-derecha-blue.png) right bottom no-repeat,
+              url(../../images/forma-redes-izquierda-blue.png) left top no-repeat;
 }
 
 .Blog h1 {

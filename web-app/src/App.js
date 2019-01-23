@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
 import Header from './components/Header/Header';
-import SocialBar from './components/SocialBar/SocialBar';
-import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Members from './components/Members/Members';
 import photoGallery from './components/photoGallery/photoGallery';
@@ -14,9 +13,8 @@ import { withFirebase } from './components/Firebase';
 class App extends Component {
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router>
         <div className="App">
-          <SocialBar />
           <Header image="./images/jointDev.png" />
 
           <Route exact path="/" component={ Home } />
@@ -25,7 +23,7 @@ class App extends Component {
           <Route path="/events" component={ Events } />
           <Route path="/blog" component={ Blog } />
 
-          <Contact utp_img="./images/logo_utp.png" sirius_img="./images/logo_sirius.png" />
+          <Footer />
         </div>
       </Router>
     );

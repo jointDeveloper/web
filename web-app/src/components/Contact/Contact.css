@@ -1,7 +1,5 @@
 .Contact {
-  min-height: 100vh;
-  height: 100%;
-  padding: 15vh 15vh 0vh 15vh;
+  padding: 15vh;
 }
 
 .Contact #left .row {

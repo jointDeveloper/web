@@ -41,13 +41,13 @@ class Members extends Component {
       return (
         <div className="col member-container" key={index + "member"}>
           <img className="member-pic rounded-circle img-responsive" alt="" src={ member.image_url } />
-          <p className="member-name text-white font-weight-bold text-center">{member.name}</p>
-          <p className="member-info text-white text-center">{member.info}</p>
+          <p className="font-weight-bold text-center font-highlighted-paragraph text-olympia">{member.name}</p>
+          <p className="text-center font-highlighted">{member.info}</p>
           <div className="row d-flex justify-content-center">
-            { member.linkedin !== "" ? (<a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-white" id="linkedin">
+            { member.linkedin !== "" ? (<a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-olympia" id="linkedin">
                                         <i className="fab fa-linkedin" aria-hidden="true"></i>
                                        </a>) : null }
-            { member.github !== "" ? (<a href={member.github} target="_blank" rel="noopener noreferrer" className="text-white">
+            { member.github !== "" ? (<a href={member.github} target="_blank" rel="noopener noreferrer" className="text-olympia">
                                        <i className="fab fa-github-alt" aria-hidden="true"></i>
                                      </a>) : null }
           </div>
@@ -71,9 +71,9 @@ class Members extends Component {
     });
 
     return (
-      <div className="Members bg-navy">
+      <div className="Members">
         <div className="row d-flex justify-content-center">
-          <h1 className="font-title text-white">Miembros</h1>
+          <h1 className="font-title">Miembros</h1>
         </div>
         { rowsOfMembers }
       </div>

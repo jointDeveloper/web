@@ -12,37 +12,45 @@ code {
 }
 
 .text-navy {
-  color: #000080;
+  color: #032567;
 }
 
 .text-pink-yarrow {
-  color: #CE3175;
+  color: #cb65c4;
 }
 
 .text-smoke-white {
-  color: #f5f5f5;
+  color: #ffffff;
 }
 
 .text-flame {
-  color: #e2b822;
+  color: #ff9f00;
+}
+
+.text-olympia {
+  color: #49b9ff;
 }
 
 .bg-navy {
-  background-color: #000080;
+  background-color: #032567;
 }
 
-.bg-navy-light {
-  background-color: #5050d0;
+.bg-navy-gradient {
+  background-image: linear-gradient(-90deg, #032567, #a2b7e1);
 }
 
 .bg-pink-yarrow {
-  background-color: #CE3175;
+  background-color: #cb65c4;
+}
+
+.bg-pink-yarrow-gradient {
+  background-image: linear-gradient(-90deg, #461442, #cb65c4);
 }
 
 .bg-flame {
-  background-color: #e2b822;
+  background-color: #ff9f00;
 }
 
 .bg-smoke {
-  background-color: #cdcdcd;
+  background-color: #e4e4e4;
 }

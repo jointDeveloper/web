@@ -10,10 +10,6 @@ class photoGallery extends React.Component {
       events: [],
       carouselImages: []
     }
-    this.addClassName = this.addClassName.bind(this);
-    this.removeClassName = this.removeClassName.bind(this);
-    this.onMouseOver = this.onMouseOver.bind(this);
-    this.showImages = this.showImages.bind(this);
   }
 
   componentDidMount() {
@@ -26,7 +22,7 @@ class photoGallery extends React.Component {
     window.removeEventListener('mousemove', this.onMouseOver);
   }
 
-  getCoverPhotos() {
+  getCoverPhotos = () => {
     let storage = this.props.firebase.getStorage();
 
     for (let i = 0; i < events.length; i++) {
@@ -44,7 +40,7 @@ class photoGallery extends React.Component {
     }
   }
 
-  onMouseOver() {
+  onMouseOver = () => {
     let imageEvent = document.getElementsByClassName('image-container');
     for (let i = 0; i < imageEvent.length; i++) {
       // console.log(imageEvent[i]);
@@ -62,7 +58,7 @@ class photoGallery extends React.Component {
     }
   }
 
-  addClassName(element, className) {
+  addClassName = (element, className) => {
     let classNameElement = element.className;
     let classNameArray = classNameElement.split(" ");
 
@@ -72,7 +68,7 @@ class photoGallery extends React.Component {
     }
   }
 
-  removeClassName(element, className) {
+  removeClassName = (element, className) => {
     let classNameElement = element.className;
     let classNameArray = classNameElement.split(" ");
 
@@ -83,7 +79,7 @@ class photoGallery extends React.Component {
     }
   }
 
-  showImages(e, eventItem) {
+  showImages = (e, eventItem) => {
     e.preventDefault();
     let images = [];
     images.push(eventItem.images_src + "cover.jpg");
@@ -96,7 +92,7 @@ class photoGallery extends React.Component {
   render() {
     let eventsItems = this.state.events.map((event, index) => {
       return (
-        <div className="col" key={"eventsItem" + index}>
+        <div className="col event-container" key={"eventsItem" + index}>
           <div className="text-center image-container" onClick={(e) => this.showImages(e, event)}>
             <img className="event-pic img-responsive rounded" alt="" src={ event.imageSrc } />
             <div className="text-centered font-weight-bold info-container hide">
@@ -124,7 +120,7 @@ class photoGallery extends React.Component {
     });
 
     return (
-      <div className="photoGallery bg-flame">
+      <div className="photoGallery bg-pink-yarrow-gradient">
         <h1 className="font-title text-center text-white">Galería de Fotos</h1>
         <Carousel images={this.state.carouselImages} firebase={this.props.firebase} />
         { rowsOfEvents }

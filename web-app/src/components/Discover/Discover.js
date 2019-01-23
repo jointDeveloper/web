@@ -32,9 +32,9 @@ class Discover extends Component {
       return (
         <div className="col discover-item" key={index + "discover"}>
           <Link to={item.href}>
-            <h2 className="text-smoke-white text-center">{item.title}</h2>
+            <h2 className="text-center text-olympia font-weight-bold">{item.title}</h2>
             <div className="d-flex justify-content-center">
-              <i className={"text-smoke-white " + item.icon}></i>
+              <i className={"text-olympia font-weight-bold " + item.icon}></i>
             </div>
           </Link>
         </div>
@@ -42,7 +42,7 @@ class Discover extends Component {
     });
 
     return (
-      <div className="Discover container-fluid bg-flame d-flex flex-row justify-content-center" id="discover">
+      <div className="Discover container-fluid d-flex flex-row justify-content-center" id="discover">
         <div className="row align-self-center">
           {items}
         </div>

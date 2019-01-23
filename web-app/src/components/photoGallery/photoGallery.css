@@ -27,6 +27,7 @@
 
 .photoGallery .image-container img:hover {
   filter: brightness(50%);
+  opacity: 0.5;
 }
 
 .photoGallery .text-centered {
