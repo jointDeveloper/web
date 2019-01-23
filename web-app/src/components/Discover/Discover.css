@@ -1,5 +1,7 @@
 .Discover {
   height: 100vh;
+  background: url(../../images/forma-redes-derecha-blue.png) right bottom no-repeat,
+              url(../../images/forma-redes-izquierda-blue.png) left top no-repeat;
 }
 
 .Discover i {
@@ -11,5 +13,6 @@
 }
 
 .Discover .discover-item {
-  padding: 10vh;
+  background-color: white;
+  margin: 5vh;
 }
