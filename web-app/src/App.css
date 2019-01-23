@@ -20,6 +20,10 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+.App .font-highlighted {
+  font-family: 'Righteous', regular;
+}
+
 .show-red {
   background-color: red;
   border-style: solid;

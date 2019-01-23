@@ -1,7 +1,6 @@
 import React from 'react';
 import './Contact.css';
 import ContactForm from '../ContactForm/ContactForm';
-import SocialBar from '../SocialBar/SocialBar';
 
 class Contact extends React.Component {
   render() {

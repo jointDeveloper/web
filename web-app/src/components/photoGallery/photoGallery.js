@@ -120,7 +120,7 @@ class photoGallery extends React.Component {
     });
 
     return (
-      <div className="photoGallery bg-flame">
+      <div className="photoGallery bg-pink-yarrow-gradient">
         <h1 className="font-title text-center text-white">Galería de Fotos</h1>
         <Carousel images={this.state.carouselImages} firebase={this.props.firebase} />
         { rowsOfEvents }

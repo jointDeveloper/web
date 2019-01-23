@@ -38,7 +38,7 @@ class Blog extends React.Component {
         <div key={index + "post"} className="col-sm-6">
           <div className="card">
             <div className="card-body">
-              <h5 className="card-title font-quote">{post.title}</h5>
+              <h5 className="card-title font-highlighted-paragraph">{post.title}</h5>
               <p className="card-text">{post.description}</p>
               <a href={post.url} target="_blank" rel="noopener noreferrer" className="btn btn-primary bg-navy font-weight-bold">Leer</a>
             </div>
@@ -48,9 +48,9 @@ class Blog extends React.Component {
     });
 
     return (
-      <div className="Blog bg-navy">
+      <div className="Blog">
         <div className="row d-flex justify-content-center">
-          <h1 className="font-title text-white">Blog</h1>
+          <h1 className="font-title">Blog</h1>
         </div>
         <div className="row d-flex justify-content-center">
           {items}
