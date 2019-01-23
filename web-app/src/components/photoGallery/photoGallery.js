@@ -92,7 +92,7 @@ class photoGallery extends React.Component {
   render() {
     let eventsItems = this.state.events.map((event, index) => {
       return (
-        <div className="col" key={"eventsItem" + index}>
+        <div className="col event-container" key={"eventsItem" + index}>
           <div className="text-center image-container" onClick={(e) => this.showImages(e, event)}>
             <img className="event-pic img-responsive rounded" alt="" src={ event.imageSrc } />
             <div className="text-centered font-weight-bold info-container hide">
