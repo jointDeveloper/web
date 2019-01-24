@@ -2,7 +2,6 @@
   "members": [
     {
       "name": "Carolina Jiménez",
-      "info": "Desarrolladora de Software - Co fundadora de jointDeveloper",
       "image_src": "images/members/cjg.jpg",
       "github": "https://github.com/carolinajimenez26",
       "linkedin": "https://www.linkedin.com/in/carolinajimenez26/"
@@ -10,42 +9,36 @@
     {
       "name": "Yensy Gómez",
       "image_src": "images/members/yen.jpg",
-      "info": "",
       "github": "https://github.com/YensyGomez",
       "linkedin": "https://www.linkedin.com/in/yhgomez/"
     },
     {
       "name": "Oriana Cadavid",
       "image_src": "images/members/ori.jpg",
-      "info": "Estudiante de Ingeniería Física que le gusta la música, matemáticas, física y programación.",
       "github": "https://github.com/OrianaCadavid",
       "linkedin": "https://www.linkedin.com/in/orianacadavid"
     },
     {
       "name": "Eliana Osorio",
       "image_src": "images/members/eli.jpg",
-      "info": "Estudiante de Ingeniería de Sistemas y Computación",
       "github": "https://github.com/ElianaO",
       "linkedin": "https://www.linkedin.com/in/elianaosorior"
     },
     {
       "name": "Zorayda Gutierrez",
       "image_src": "images/members/zorayda.jpg",
-      "info": "",
       "github": "https://github.com/Zorayda",
       "linkedin": "https://www.linkedin.com/in/zoraida-gutierrez-7a7301114/"
     },
     {
       "name": "Natalia Castaño",
       "image_src": "images/members/nata.jpg",
-      "info": "Estudiante de Licenciatura en Pedagogía Infantil de la Universidad Tecnológica de Pereira. Me gusta el empoderamiento de mujeres, enseñar y aprender",
       "github": "",
       "linkedin": "https://www.linkedin.com/in/natalia-castano-betancurt-7b8b72178"
     },
     {
       "name": "Melissa Escobar",
       "image_src": "images/members/meli.jpg",
-      "info": "Estudiante de Ingeniería de Sistemas y Computación. Amante de la vida. Apasionada por las matemáticas, los libros, la música y la naturaleza",
       "github": "https://github.com/MelissaEscobar",
       "linkedin": ""
     }

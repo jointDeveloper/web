@@ -1,11 +1,7 @@
 .About {
   height: 100%;
   padding: 15vh;
-}
-
-.About #mision {
-  font-size: 30px;
-  padding: 15vh;
+  background: url(../../images/forma-redes-pink-top-completa.png) center top no-repeat;
 }
 
 .About .col {

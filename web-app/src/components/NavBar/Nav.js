@@ -45,18 +45,29 @@ class Nav extends React.Component {
       <div className="Nav">
         <nav className="navbar fixed-top">
           <a className="navbar-brand" href="/">
-            <h1 className="font-title"><span className="text-navy">joint</span><span className="text-pink-yarrow">Dev</span></h1>
+            <div className="row">
+              <div className="col">
+                <img src={this.props.image} alt="" className="responsive-img" />
+              </div>
+              <div className="col">
+                <h1 className="font-title"><span className="text-navy">joint</span><span className="text-pink-yarrow">Dev</span></h1>
+                <p className="font-highlighted-paragraph text-smoke-white">Learning includes everyone!</p>
+              </div>
+            </div>
           </a>
           <div className="content text-white">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link font-weight-bold text-white" href="../#about">¿Quiénes somos?</a>
+                <a className="nav-link font-weight-bold text-white font-subtitle" href="../#about">¿Quiénes somos?</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link font-weight-bold text-white" href="../#discover">Descubre</a>
+                <a className="nav-link font-weight-bold text-white font-subtitle" href="../#chart">Estadísticas</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link font-weight-bold text-white" href="#contact">¡Contáctanos!</a>
+                <a className="nav-link font-weight-bold text-white font-subtitle" href="../#discover">Descubre</a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link font-weight-bold text-white font-subtitle" href="#contact">¡Contáctanos!</a>
               </li>
             </ul>
           </div>

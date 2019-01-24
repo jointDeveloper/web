@@ -17,7 +17,7 @@
 }
 
 .Events .rbc-calendar .rbc-btn-group button:hover {
-  background-color: rgb(203,101,196) !important;
+  background-color: #ff9f00 !important;
   cursor: pointer;
 }
 
@@ -28,9 +28,9 @@
 
 .Events .rbc-calendar .rbc-today {
   border-style: double;
-  background-color: #cb65c4;
+  background-color: #ff9f00;
 }
 
 .Events .rbc-calendar .rbc-event {
-  background-color: #461442;
+  background-color: #b37612;
 }

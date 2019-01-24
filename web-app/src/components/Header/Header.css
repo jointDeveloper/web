@@ -13,7 +13,7 @@
   background-blend-mode: multiply;
 }
 
-.Header img {
-  width: auto;
-  height: 50vh;
+.Header #mision {
+  font-size: 4vh;
+  padding: 15vh;
 }

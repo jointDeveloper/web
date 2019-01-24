@@ -3,8 +3,17 @@
   height: 10vh;
 }
 
-.Nav .font-title {
-  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+.Nav img {
+  width: auto;
+  height: 20vh;
+}
+
+.Nav .font-subtitle {
+  font-size: 4vh;
+}
+
+.Nav .navbar-brand p {
+  font-size: 3vh;
 }
 
 .navbar-nav {
