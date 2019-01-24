@@ -53,6 +53,9 @@ class Nav extends React.Component {
                 <a className="nav-link font-weight-bold text-white" href="../#about">¿Quiénes somos?</a>
               </li>
               <li className="nav-item">
+                <a className="nav-link font-weight-bold text-white" href="../#chart">Estadísticas</a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link font-weight-bold text-white" href="../#discover">Descubre</a>
               </li>
               <li className="nav-item">
