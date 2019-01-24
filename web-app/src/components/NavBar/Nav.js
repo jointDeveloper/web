@@ -50,16 +50,16 @@ class Nav extends React.Component {
           <div className="content text-white">
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <a className="nav-link font-weight-bold text-white" href="../#about">¿Quiénes somos?</a>
+                <a className="nav-link font-weight-bold text-white font-subtitle" href="../#about">¿Quiénes somos?</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link font-weight-bold text-white" href="../#chart">Estadísticas</a>
+                <a className="nav-link font-weight-bold text-white font-subtitle" href="../#chart">Estadísticas</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link font-weight-bold text-white" href="../#discover">Descubre</a>
+                <a className="nav-link font-weight-bold text-white font-subtitle" href="../#discover">Descubre</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link font-weight-bold text-white" href="#contact">¡Contáctanos!</a>
+                <a className="nav-link font-weight-bold text-white font-subtitle" href="#contact">¡Contáctanos!</a>
               </li>
             </ul>
           </div>

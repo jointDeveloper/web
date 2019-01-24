@@ -1,7 +1,12 @@
+@font-face {
+  font-family: fontParagraph;
+  src: url(./fonts/Raleway/Raleway-Medium.ttf);
+}
+
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Raleway', sans-serif;
+  font-family: fontParagraph;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -41,6 +46,10 @@ code {
 
 .bg-pink-yarrow {
   background-color: #cb65c4;
+}
+
+.bg-pink-yarrow-strong {
+  background-color: #461442;
 }
 
 .bg-pink-yarrow-gradient {

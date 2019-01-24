@@ -28,7 +28,7 @@ class SocialBar extends React.Component {
     return (
       <div className="SocialBar">
         <div className="row d-flex flex-row justify-content-center">
-          <h3>¡Síguenos!</h3>
+          <h3 className="text-smoke-white font-quote-ananda">¡Síguenos!</h3>
         </div>
         <div className="row d-flex flex-row justify-content-center">
           { items }
