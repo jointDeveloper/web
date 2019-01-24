@@ -42,7 +42,6 @@ class Members extends Component {
         <div className="col member-container" key={index + "member"}>
           <img className="member-pic rounded-circle img-responsive" alt="" src={ member.image_url } />
           <p className="font-weight-bold text-center font-highlighted-paragraph text-olympia">{member.name}</p>
-          <p className="text-center font-highlighted">{member.info}</p>
           <div className="row d-flex justify-content-center">
             { member.linkedin !== "" ? (<a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-olympia" id="linkedin">
                                         <i className="fab fa-linkedin" aria-hidden="true"></i>
