@@ -45,7 +45,15 @@ class Nav extends React.Component {
       <div className="Nav">
         <nav className="navbar fixed-top">
           <a className="navbar-brand" href="/">
-            <h1 className="font-title"><span className="text-navy">joint</span><span className="text-pink-yarrow">Dev</span></h1>
+            <div className="row">
+              <div className="col">
+                <img src={this.props.image} alt="" className="responsive-img" />
+              </div>
+              <div className="col">
+                <h1 className="font-title"><span className="text-navy">joint</span><span className="text-pink-yarrow">Dev</span></h1>
+                <p className="font-highlighted-paragraph text-smoke-white">Learning includes everyone!</p>
+              </div>
+            </div>
           </a>
           <div className="content text-white">
             <ul className="navbar-nav">

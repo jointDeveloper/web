@@ -6,7 +6,7 @@ import SocialBar from '../SocialBar/SocialBar';
 class Footer extends React.Component {
   render() {
     return (
-      <div className="Footer bg-pink-yarrow-strong" id="contact">
+      <div className="Footer bg-pink-yarrow" id="contact">
         <footer className="page-footer font-small teal">
           <Contact utp_img="./images/logo_utp.png" sirius_img="./images/logo_sirius.png" />
           <SocialBar />

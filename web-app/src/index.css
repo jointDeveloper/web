@@ -28,12 +28,20 @@ code {
   color: #ffffff;
 }
 
+.text-smoke-strong {
+  color: #5a5a5a;
+}
+
 .text-flame {
   color: #ff9f00;
 }
 
 .text-olympia {
   color: #49b9ff;
+}
+
+.text-olympia-strong {
+  color: #3451b3;
 }
 
 .bg-navy {
@@ -50,6 +58,10 @@ code {
 
 .bg-pink-yarrow-strong {
   background-color: #461442;
+}
+
+.bg-pink-yarrow-light {
+  background-color: #eac1e7;
 }
 
 .bg-pink-yarrow-gradient {

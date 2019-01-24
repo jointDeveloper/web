@@ -9,21 +9,25 @@ class Discover extends Component {
       {
         "title":"Integrantes",
         "icon":"fas fa-users",
+        "class_color": "text-olympia",
         "href":"/members"
       },
       {
         "title":"Galería de fotos",
         "icon":"fas fa-images",
+        "class_color": "text-navy",
         "href":"/photoGallery"
       },
       {
         "title":"Eventos",
         "icon":"fas fa-calendar-day",
+        "class_color": "text-pink-yarrow",
         "href":"/events"
       },
       {
         "title":"Blog",
         "icon":"fab fa-blogger",
+        "class_color": "text-flame",
         "href":"/blog"
       }
     ];
@@ -32,9 +36,9 @@ class Discover extends Component {
       return (
         <div className="col discover-item" key={index + "discover"}>
           <Link to={item.href}>
-            <h2 className="text-center text-olympia font-weight-bold">{item.title}</h2>
+            <h2 className="text-center text-smoke-strong font-weight-bold">{item.title}</h2>
             <div className="d-flex justify-content-center">
-              <i className={"text-olympia font-weight-bold " + item.icon}></i>
+              <i className={"font-weight-bold " + item.class_color + " " + item.icon}></i>
             </div>
           </Link>
         </div>

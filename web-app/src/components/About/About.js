@@ -25,27 +25,21 @@ class Header extends React.Component {
       return (
         <div className="col d-flex justify-content-center what-we-do" key={index + "whatWeDo"}>
           <div className="row">
-            <h3 className="text-smoke-white text-center">{item.title}</h3>
+            <h3 className="text-smoke-strong text-center">{item.title}</h3>
           </div>
           <div className="row">
-            <i className={"text-smoke-white " + item.icon}></i>
+            <i className={"text-olympia-strong " + item.icon}></i>
           </div>
           <div className="row">
-            <p className="text-smoke-white text-center">{item.text}</p>
+            <p className="text-smoke-strong text-center">{item.text}</p>
           </div>
         </div>
       );
     });
     return (
-      <div className="About container-fluid bg-pink-yarrow" id="about">
+      <div className="About container-fluid" id="about">
 
-        <div className="row">
-          <div className="col">
-            <p className="font-quote text-center text-smoke-white" id="mision">Somos una comunidad que busca despertar el interés de las mujeres y niñas en la tecnología, generando espacios que promueven su participación en este campo mediante el aprendizaje colectivo, compartiendo conocimientos y recursos técnicos con otras comunidades.</p>
-          </div>
-        </div>
-
-        <h1 className="font-subtitle text-center text-smoke-white font-weight-bold">¿Qué hacemos?</h1>
+        <h1 className="font-subtitle text-center text-smoke-strong font-weight-bold">¿Qué hacemos?</h1>
 
         <div className="row" id="what-we-do-row-container">
           {items}

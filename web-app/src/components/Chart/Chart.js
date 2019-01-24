@@ -47,7 +47,7 @@ const womenVSman = {
 export default class Chart extends React.Component {
   render() {
     return (
-      <div className="Chart" id="chart">
+      <div className="Chart bg-pink-yarrow-light" id="chart">
         <div className="row d-flex justify-content-center">
           <h2 className="font-subtitle font-weight-bold">Estadísticas</h2>
         </div>
