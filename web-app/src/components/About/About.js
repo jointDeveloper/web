@@ -39,7 +39,7 @@ class Header extends React.Component {
     return (
       <div className="About container-fluid" id="about">
 
-        <h1 className="font-subtitle text-center text-smoke-strong font-weight-bold">¿Qué hacemos?</h1>
+        <h1 className="font-subtitle text-center text-navy font-weight-bold">¿Qué hacemos?</h1>
 
         <div className="row" id="what-we-do-row-container">
           {items}

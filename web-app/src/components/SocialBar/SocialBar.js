@@ -1,6 +1,7 @@
 import React from 'react';
 import './SocialBar.css';
 import { items } from './items.json';
+const iconsPath = 'images/icons/';
 
 class SocialBar extends React.Component {
   constructor() {
@@ -18,8 +19,8 @@ class SocialBar extends React.Component {
     const items = this.state.items.map((item, index) => {
       return (
         <div className="col icons-container" key={index + "social"}>
-          <a href={item.href} className={item.a_class} target="_blank" rel="noopener noreferrer">
-            <i className={item.i_class} aria-hidden="true"></i>
+          <a href={item.href} target="_blank" rel="noopener noreferrer">
+            <img src={iconsPath + item.a_class + ".png"} alt="" className="responsive-img" />
           </a>
         </div>
       );
