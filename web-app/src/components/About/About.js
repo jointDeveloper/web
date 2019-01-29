@@ -31,7 +31,7 @@ class Header extends React.Component {
             <h3 className="text-smoke-strong text-center">{item.title}</h3>
           </div>
           <div className="row">
-            <img src={this.props.iconsPath + item.icon_img} alt="" className="responsive-img" />
+            <i className={"text-olympia-strong " + item.icon}></i>
           </div>
           <div className="row">
             <p className="text-smoke-strong text-center">{item.text}</p>
