@@ -1,35 +1,6 @@
 import React from 'react';
 import './Stats.css';
-import { Pie } from 'react-chartjs-2';
-import { defaults } from 'react-chartjs-2';
-defaults.global.defaultFontFamily = 'fontParagraph';
-defaults.global.defaultFontColor = '#5a5a5a';
-defaults.global.defaultFontSize = 15;
 const imagesPath = 'images/stats/';
-
-const data = {
-	labels: [
-		'Mujeres mayores de 15 años',
-		'Mujeres menores de 15 años',
-		'Hombres menores de 15 años',
-    'Hombres mayores de 15 años'
-	],
-	datasets: [{
-		data: [500, 427, 368, 582],
-		backgroundColor: [
-    '#ff9f00',
-		'#032567',
-		'#cb65c4',
-    '#49b9ff'
-		],
-		hoverBackgroundColor: [
-    '#ff9f00',
-		'#032567',
-		'#cb65c4',
-    '#49b9ff'
-		]
-	}]
-};
 
 class Stats extends React.Component {
   render() {
@@ -52,7 +23,7 @@ class Stats extends React.Component {
           </div>
           <div className="col align-self-center">
             <div className="row d-flex justify-content-center">
-              <Pie data={data} />
+							<img className="img-responsive" alt="" src={ imagesPath + "imgParticipacion.png" } />
             </div>
           </div>
         </div>
