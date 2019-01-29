@@ -41,6 +41,78 @@
       "image_src": "images/members/meli.jpg",
       "github": "https://github.com/MelissaEscobar",
       "linkedin": ""
+    },
+    {
+      "name": "Catalina Castro",
+      "image_src": "images/members/cata.png",
+      "github": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Daniela Zuluaga",
+      "image_src": "images/members/daniz.jpg",
+      "github": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Daniel Largo",
+      "image_src": "images/members/danil.png",
+      "github": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Diego Osorio",
+      "image_src": "images/members/diego.jpg",
+      "github": "",
+      "linkedin": ""
+    },
+    {
+      "name": "John Osorio",
+      "image_src": "images/members/john.jpg",
+      "github": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Juan David Hincapie",
+      "image_src": "images/members/juan.jpg",
+      "github": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Natalia Restrepo",
+      "image_src": "images/members/natar.png",
+      "github": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Tatiana Lopez",
+      "image_src": "images/members/tatiana.jpg",
+      "github": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Vanessa Penagos",
+      "image_src": "images/members/vanep.png",
+      "github": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Vanessa Velasquez",
+      "image_src": "images/members/vanev.jpg",
+      "github": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Victoria Gasca",
+      "image_src": "images/members/vicky.jpg",
+      "github": "",
+      "linkedin": ""
+    },
+    {
+      "name": "Fabian",
+      "image_src": "",
+      "github": "",
+      "linkedin": ""
     }
   ]
 }
