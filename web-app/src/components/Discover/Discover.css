@@ -3,8 +3,17 @@
   background: url(../../images/forma-redes-pink-bottom-completa.png) center bottom no-repeat;
 }
 
-.Discover i {
+.Discover .discover-item i {
   font-size:20vh;
+}
+
+.Discover .discover-item:hover i {
+  font-size:22vh;
+  color: #e4e4e4;
+}
+
+.Discover .discover-item:hover h2 {
+  font-size:5vh;
 }
 
 .Discover a {

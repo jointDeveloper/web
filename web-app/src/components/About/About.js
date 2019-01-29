@@ -7,17 +7,20 @@ class Header extends React.Component {
       {
         "title":"Enseñamos a niños y niñas",
         "text":"A través de juegos y de formas didácticas sobre programación y electrónica.",
-        "icon":"fas fa-chalkboard-teacher"
+        "icon":"fas fa-chalkboard-teacher",
+        "icon_img": "education.png"
       },
       {
         "title":"Compartimos conocimiento",
         "text":"Realizamos charlas mensuales y talleres sobre tecnología, con nuestro conocimiento y con el de personas de comunidades amigas",
-        "icon":"fas fa-share-alt"
+        "icon":"fas fa-share-alt",
+        "icon_img": "network.png"
       },
       {
         "title":"Compartimos oportunidades",
         "text":"De becas, trabajos, pasantías y de más a través de nuestras redes sociales.",
-        "icon":"fas fa-hands-helping"
+        "icon":"fas fa-hands-helping",
+        "icon_img": "help.png"
       },
     ];
 

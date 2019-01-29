@@ -9,7 +9,7 @@ class Discover extends Component {
       {
         "title":"Integrantes",
         "icon":"fas fa-users",
-        "class_color": "text-olympia",
+        "class_color": "text-pink-light",
         "href":"/members"
       },
       {
@@ -36,7 +36,7 @@ class Discover extends Component {
       return (
         <div className="col discover-item" key={index + "discover"}>
           <Link to={item.href}>
-            <h2 className="text-center text-smoke-strong font-weight-bold">{item.title}</h2>
+            <h2 className="text-center text-olympia font-weight-bold">{item.title}</h2>
             <div className="d-flex justify-content-center">
               <i className={"font-weight-bold " + item.class_color + " " + item.icon}></i>
             </div>
