@@ -24,6 +24,10 @@ code {
   color: #cb65c4;
 }
 
+.text-pink-light {
+  color: #eac1e7;
+}
+
 .text-smoke-white {
   color: #ffffff;
 }
@@ -69,5 +73,5 @@ code {
 }
 
 .bg-smoke {
-  background-color: #e4e4e4;
+  background-color: #e6e7ee;
 }

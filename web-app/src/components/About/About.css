@@ -26,6 +26,11 @@
   padding-top: 5vh;
 }
 
-.About .what-we-do i {
+.About .what-we-do img {
   padding-top: 5vh;
+  height: 15vw;
+}
+
+.About .what-we-do img:hover {
+  color: red;
 }
