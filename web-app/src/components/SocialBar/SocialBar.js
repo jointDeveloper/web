@@ -1,11 +1,10 @@
 import React from 'react';
 import './SocialBar.css';
 import { items } from './items.json';
-const iconsPath = 'images/icons/';
 
 class SocialBar extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       items
     }
@@ -20,7 +19,7 @@ class SocialBar extends React.Component {
       return (
         <div className="col icons-container" key={index + "social"}>
           <a href={item.href} target="_blank" rel="noopener noreferrer">
-            <img src={iconsPath + item.a_class + ".png"} alt="" className="responsive-img" />
+            <img src={this.props.iconsPath + item.a_class + ".png"} alt="" className="responsive-img" />
           </a>
         </div>
       );
