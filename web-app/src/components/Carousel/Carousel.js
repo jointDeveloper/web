@@ -42,7 +42,7 @@ class Carousel extends React.Component {
       classNameAux += index === 0 ? " active" : "";
       return (
         <div className={classNameAux} key={index + "carousel"}>
-          <img className="d-block w-100 carousel-img" src={image} alt="" />
+          <img className="d-block carousel-img" src={image} alt="" />
         </div>
       );
     });
