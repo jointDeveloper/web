@@ -1,4 +1,18 @@
 .Carousel .carousel-img {
   height: 50vh;
   width: auto;
+  margin-bottom: 10vh;
+}
+
+.Carousel .carousel-control-next .carousel-control-next-icon,
+.Carousel .carousel-control-prev .carousel-control-prev-icon {
+  position: relative;
+}
+
+.Carousel .carousel-control-next .carousel-control-next-icon {
+  left: 5vw;
+}
+
+.Carousel .carousel-control-prev .carousel-control-prev-icon {
+  right: 7vw;
 }
