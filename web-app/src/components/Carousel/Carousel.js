@@ -20,7 +20,6 @@ class Carousel extends React.Component {
   }
 
   render() {
-    console.log("#" + this.props.carouselId);
     return (
       <div className="Carousel col d-flex justify-content-center">
         <div id={ this.props.carouselId } className="carousel slide" data-ride="carousel">
