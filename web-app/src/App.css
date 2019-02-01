@@ -1,23 +1,57 @@
+@font-face {
+  font-family: fontTitle;
+  src: url(./fonts/Righteous/Righteous-Regular.ttf);
+}
+
+@font-face {
+  font-family: fontSubtitle;
+  src: url(./fonts/Raleway/Raleway-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: fontParagraph;
+  src: url(./fonts/Raleway/Raleway-Medium.ttf);
+}
+
+@font-face {
+  font-family: fontQuoteAnanda;
+  src: url(./fonts/Ananda/Ananda-Black-Personal-Use.ttf);
+}
+
+@font-face {
+  font-family: fontQuoteRighteous;
+  src: url(./fonts/Righteous/Righteous-Regular.ttf);
+}
+
+@font-face {
+  font-family: highlightedParagraph;
+  src: url(./fonts/OpenSans/OpenSans-Italic.ttf);
+}
+
 .App .font-title {
   font-size: 70px;
-  font-family: 'Righteous', cursive;
+  font-family: fontTitle;
 }
 
 .App .font-subtitle {
-  font-size: 50px;
-  font-family: 'Raleway', sans-serif;
+  font-size: 70px;
+  font-family: fontSubtitle;
 }
 
 .App .font-paragraph {
-  font-family: 'Raleway', sans-serif;
+  font-family: fontParagraph;
+}
+
+.App .font-quote-ananda {
+  font-family: fontQuoteAnanda;
 }
 
 .App .font-quote {
-  font-family: 'Dancing Script', cursive;
+  font-family: fontQuoteRighteous;
 }
 
 .App .font-highlighted-paragraph {
-  font-family: 'Open Sans', sans-serif;
+  font-family: highlightedParagraph;
 }
 
 .show-red {

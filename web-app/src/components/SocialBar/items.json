@@ -13,12 +13,6 @@
       "i_class" : "fab fa-twitter"
     },
     {
-      "name" : "Meetup",
-      "href" : "https://www.meetup.com/es/jointDeveloper/",
-      "a_class" : "meetup",
-      "i_class" : "fab fa-meetup"
-    },
-    {
       "name" : "LinkedIn",
       "href" : "https://www.linkedin.com/company/16226960",
       "a_class" : "linkedin",
@@ -49,22 +43,10 @@
       "i_class" : "fab fa-github-alt"
     },
     {
-      "name" : "Medium",
-      "href" : "https://medium.com/@jointdeveloper",
-      "a_class" : "medium",
-      "i_class" : "fab fa-medium"
-    },
-    {
       "name" : "Slack",
       "href" : "https://jointdeveloper.slack.com",
       "a_class" : "slack",
       "i_class" : "fab fa-slack"
-    },
-    {
-      "name" : "Email",
-      "href" : "mailto:developerjoint@gmail.com",
-      "a_class" : "envelope",
-      "i_class" : "fas fa-envelope"
     }
   ]
 }

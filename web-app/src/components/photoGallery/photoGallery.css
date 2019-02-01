@@ -5,10 +5,10 @@
 }
 
 .photoGallery .event-pic {
-  height: 30vh;
-  width: 30vh;
   object-fit: cover;
   object-position: 0% 0;
+  max-height: 30vh;
+  max-width: 30vh;
 }
 
 .photoGallery h1 {
@@ -27,6 +27,7 @@
 
 .photoGallery .image-container img:hover {
   filter: brightness(50%);
+  opacity: 0.5;
 }
 
 .photoGallery .text-centered {
@@ -49,10 +50,10 @@
   font-size: 2vh;
 }
 
-.photoGallery .event-row {
-  margin-top: 5vh;
-}
-
 .photoGallery .info-container {
   max-width: 30vh;
+}
+
+.photoGallery .event-container {
+  width: 25vw;
 }

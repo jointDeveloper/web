@@ -55,7 +55,7 @@ class Events extends React.Component {
 
   render() {
     return (
-      <div className="Events bg-pink-yarrow">
+      <div className="Events bg-navy-gradient">
         <div className="row d-flex justify-content-center">
           <h1 className="font-title text-white">Eventos</h1>
         </div>

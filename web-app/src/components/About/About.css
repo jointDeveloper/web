@@ -1,11 +1,7 @@
 .About {
   height: 100%;
   padding: 15vh;
-}
-
-.About #mision {
-  font-size: 30px;
-  padding: 15vh;
+  background: url(../../images/forma-redes-pink-top-completa.png) center top no-repeat;
 }
 
 .About .col {
@@ -30,6 +26,11 @@
   padding-top: 5vh;
 }
 
-.About .what-we-do i {
+.About .what-we-do img {
   padding-top: 5vh;
+  height: 15vw;
+}
+
+.About .what-we-do img:hover {
+  color: red;
 }

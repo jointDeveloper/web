@@ -3,8 +3,8 @@ import './SocialBar.css';
 import { items } from './items.json';
 
 class SocialBar extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       items
     }
@@ -16,23 +16,23 @@ class SocialBar extends React.Component {
 
   render () {
     const items = this.state.items.map((item, index) => {
-      let id = "item" + index.toString();
       return (
-        <div key={index + "social"}>
-          <li key={id + "li"}><a href={item.href} className={item.a_class} target="_blank" rel="noopener noreferrer">
-            <i className={item.i_class} aria-hidden="true"></i><span>{item.name}</span>
-          </a></li>
+        <div className="col icons-container" key={index + "social"}>
+          <a href={item.href} target="_blank" rel="noopener noreferrer">
+            <img src={this.props.iconsPath + item.a_class + ".png"} alt="" className="responsive-img" />
+          </a>
         </div>
       );
     });
 
     return (
       <div className="SocialBar">
-        <aside id="sticky-social">
-          <ul>
-            { items }
-          </ul>
-        </aside>
+        <div className="row d-flex flex-row justify-content-center">
+          <h3 className="text-smoke-white font-quote-ananda">¡Síguenos en nuestras redes!</h3>
+        </div>
+        <div className="row d-flex flex-row justify-content-center">
+          { items }
+        </div>
       </div>
     );
   }
