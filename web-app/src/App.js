@@ -13,7 +13,7 @@ import { withFirebase } from './components/Firebase';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename="/jointdeveloper">
         <div className="App">
           <Header image="./images/jointDev.png" />
 
