@@ -23,7 +23,7 @@ class Stats extends React.Component {
           </div>
           <div className="col align-self-center">
             <div className="row d-flex justify-content-center">
-							<img className="img-responsive" alt="" src={ imagesPath + "imgParticipacion.png" } />
+							<img className="img-responsive img_participacion" alt="" src={ imagesPath + "imgParticipacion.png" } />
             </div>
           </div>
         </div>

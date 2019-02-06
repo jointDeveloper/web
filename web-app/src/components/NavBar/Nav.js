@@ -43,15 +43,18 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="Nav">
-        <nav className="navbar fixed-top">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
           <a className="navbar-brand" href="/">
             <div className="row">
               <div className="col">
-                <img src={this.props.image} alt="" className="responsive-img" />
+                <img src={this.props.image} alt="" className="responsive-img class_img" />
               </div>
             </div>
           </a>
-          <div className="content text-white">
+          <div className="content text-white collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item active">
                 <a className="nav-link font-weight-bold text-white font-subtitle" href="../#about">¿Quiénes somos?</a>

@@ -29,3 +29,33 @@
 .Contact #up-container {
   height: 100vh;
 }
+
+@media (max-width: 1160px) {
+  .Contact .text_contact h5{
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 940px) {
+  .Contact .text_contact h5{
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Contact .text_contact h5{
+    font-size: 65px;
+  }
+}
+
+@media (max-width: 580px) {
+  .Contact .text_contact h5{
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 485px) {
+  .Contact .text_contact h5{
+    font-size: 45px;
+  }
+}
