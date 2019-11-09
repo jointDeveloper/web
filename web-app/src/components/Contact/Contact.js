@@ -13,7 +13,7 @@ class Contact extends React.Component {
 
             <div className="col-md-6 mt-md-0 mt-3" id="left">
 
-              <div className="row">
+              <div className="row text_contact">
                 <h5 className="text-uppercase font-weight-bold font-subtitle">CONTÁCTENOS</h5>
               </div>
 

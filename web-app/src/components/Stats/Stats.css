@@ -7,3 +7,15 @@
 .Stats h2 {
   padding-bottom: 5vh;
 }
+
+@media (max-width: 570px) {
+  .Stats .img_participacion {
+    width: 450px;
+  }
+}
+
+@media (max-width: 440px) {
+  .Stats .img_participacion {
+    width: 380px;
+  }
+}
