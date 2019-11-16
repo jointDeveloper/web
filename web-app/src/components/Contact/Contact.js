@@ -7,11 +7,11 @@ class Contact extends React.Component {
     return (
       <div className="Contact bg-smoke" id="up-container">
 
-        <div className="container-fluid text-center text-md-left">
+        <div className="container-fluid text-md-left">
 
           <div className="row">
 
-            <div className="col-md-6 mt-md-0 mt-3" id="left">
+            <div className="col-xl-6 col-sm-12" id="left">
 
               <div className="row">
                 <h5 className="text-uppercase font-weight-bold font-subtitle">CONTÁCTENOS</h5>
@@ -29,8 +29,8 @@ class Contact extends React.Component {
                 <p>Universidad Tecnológica de Pereira</p>
               </div>
 
-              <div className="row">
-                <div className="col" id="utp-container">
+              <div className="row logos">
+                <div className="col">
                   <a href="https://www.utp.edu.co">
                     <img src={this.props.utp_img} alt="" className="responsive-img" id="utp" />
                   </a>
@@ -45,14 +45,8 @@ class Contact extends React.Component {
 
             </div>
 
-
-
-            <hr className="clearfix w-100 d-md-none pb-3" />
-
-            <div className="col-md-6 mb-md-0 mb-3" id="right">
-
+            <div className="col" id="right">
               <ContactForm />
-
             </div>
 
           </div>

@@ -27,23 +27,35 @@ class Header extends React.Component {
     const items = whatWeDo.map((item, index) => {
       return (
         <div className="col d-flex justify-content-center what-we-do" key={index + "whatWeDo"}>
-          <div className="row">
-            <h3 className="text-smoke-strong text-center">{item.title}</h3>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12">
+                <h3 className="text-smoke-strong text-center">{item.title}</h3>
+              </div>
+            </div>
           </div>
-          <div className="row">
-            <i className={"text-olympia-strong " + item.icon}></i>
+          <div class="row">
+            <div class="col-sm-12">
+              <i className={"text-olympia-strong " + item.icon}></i>
+            </div>
           </div>
-          <div className="row">
-            <p className="text-smoke-strong text-center">{item.text}</p>
+          <div class="row">
+            <div class="col-sm-12">
+              <p className="text-smoke-strong text-center">{item.text}</p>
+            </div>
           </div>
         </div>
       );
     });
     return (
       <div className="About container-fluid" id="about">
-
-        <h1 className="font-subtitle text-center text-navy font-weight-bold">¿Qué hacemos?</h1>
-
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <h1 className="font-subtitle text-center text-navy font-weight-bold">¿Qué hacemos?</h1>
+            </div>
+          </div>
+        </div>
         <div className="row" id="what-we-do-row-container">
           {items}
         </div>

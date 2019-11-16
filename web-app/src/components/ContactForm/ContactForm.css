@@ -3,3 +3,7 @@
   font-weight: bold;
   border: 2px solid #000080;
 }
+
+.ContactForm {
+  min-width: 300px;
+}

@@ -1,19 +1,6 @@
 .Contact {
-  padding: 15vh;
-}
-
-.Contact #left .row {
-  padding-bottom: 5vh;
-}
-
-.Contact #utp-container,
-.Contact #sirius-container {
-  width: 10vh;
-  height: auto;
-}
-
-.Contact #utp-container {
-  max-width: 25vh;
+  height: 100%;
+  padding: 8vh;
 }
 
 .Contact #utp {
@@ -26,6 +13,13 @@
   height: auto;
 }
 
-.Contact #up-container {
-  height: 100vh;
+.Contact .logos .col {
+  margin: 30px;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .Contact .font-subtitle {
+    font-size: 65px;
+  }
 }

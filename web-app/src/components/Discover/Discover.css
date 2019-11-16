@@ -1,19 +1,10 @@
 .Discover {
-  height: 100vh;
+  min-height: 100vh;
   background: url(../../images/forma-redes-pink-bottom-completa.png) center bottom no-repeat;
 }
 
-.Discover .discover-item i {
-  font-size:20vh;
-}
-
-.Discover .discover-item:hover i {
-  font-size:22vh;
+.Discover .discover-item i:hover {
   color: #e4e4e4;
-}
-
-.Discover .discover-item:hover h2 {
-  font-size:5vh;
 }
 
 .Discover a {
@@ -22,4 +13,54 @@
 
 .Discover .discover-item {
   margin: 5vh;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .Discover .discover-item i {
+    font-size: 80px;
+  }
+  .Discover h2 {
+    font-size: 23px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .Discover .discover-item i {
+    font-size: 90px;
+  }
+  .Discover h2 {
+    font-size: 23px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .Discover .discover-item i {
+    font-size: 100px;
+  }
+  .Discover h2 {
+    font-size: 25px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .Discover .discover-item i {
+    font-size: 110px;
+  }
+  .Discover h2 {
+    font-size: 30px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .Discover .discover-item i {
+    font-size: 120px;
+  }  
+  .Discover h2 {
+    font-size: 35px;
+  }
 }
