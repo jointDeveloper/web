@@ -15,15 +15,15 @@ class Stats extends React.Component {
         <div className="row">
           <div className="col">
             <div className="row d-flex justify-content-center">
-              <img className="img-responsive" alt="" src={ imagesPath + "imgMujeres.png" } />
+              <img className="img-responsive img_gender" alt="" src={ imagesPath + "imgMujeres.png" } />
             </div>
             <div className="row d-flex justify-content-center">
-              <img className="img-responsive" alt="" src={ imagesPath + "imgHombres.png" } />
+              <img className="img-responsive img_gender" alt="" src={ imagesPath + "imgHombres.png" } />
             </div>
           </div>
           <div className="col align-self-center">
             <div className="row d-flex justify-content-center">
-							<img className="img-responsive img_participacion" alt="" src={ imagesPath + "imgParticipacion.png" } />
+							<img className="img-responsive img_participation" alt="" src={ imagesPath + "imgParticipacion.png" } />
             </div>
           </div>
         </div>
