@@ -4,6 +4,45 @@
   background: url(../../images/forma-redes-pink-top-completa.png) center top no-repeat;
 }
 
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .About .what-we-do h3 {
+    font-size: 23px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .About .what-we-do h3 {
+    font-size: 23px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .About .what-we-do h3 {
+    font-size: 25px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .About .what-we-do h3 {
+    font-size: 30px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .About .what-we-do h3 {
+    font-size: 35px;
+  }
+}
+
+.About .what-we-do h3 {
+  font-weight: bold;
+}
+
 .About .col {
   display: flex;
   align-items: center;
