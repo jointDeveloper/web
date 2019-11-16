@@ -34,3 +34,8 @@
 .Events .rbc-calendar .rbc-event {
   background-color: #b37612;
 }
+
+.Events iframe {
+  height: 500px;
+  width: 1000px;
+}
