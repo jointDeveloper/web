@@ -32,12 +32,12 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .Contact #utp {
-    width: 20vw;
+    width: 150px;
     height: auto;
   }
   
   .Contact #sirius {
-    width: 30vw;
+    width: 250px;
     height: auto;
   }
   

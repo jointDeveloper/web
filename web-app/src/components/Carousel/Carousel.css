@@ -1,7 +1,8 @@
 .Carousel .carousel-img {
   height: 50vh;
   width: auto;
-  margin-bottom: 10vh;
+  margin-bottom: 0;
+  margin-top: 20px;
 }
 
 .Carousel .carousel-control-next .carousel-control-next-icon,
@@ -10,9 +11,32 @@
 }
 
 .Carousel .carousel-control-next .carousel-control-next-icon {
-  left: 5vw;
+  left: 7vw;
 }
 
 .Carousel .carousel-control-prev .carousel-control-prev-icon {
-  right: 7vw;
+  right: 10vw;
+}
+
+.Carousel .card {
+  margin: 10px;
+}
+
+@media (max-width: 575.98px) {
+  .carousel-item-prev, .carousel-item.active {
+    width: 350px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .carousel-item-prev, .carousel-item.active {
+    width: 600px;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-item-prev, .carousel-item.active {
+    height: 50vh;
+    width: auto;
+  }
 }
