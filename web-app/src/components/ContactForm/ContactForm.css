@@ -4,6 +4,9 @@
   border: 2px solid #000080;
 }
 
-.ContactForm {
-  min-width: 300px;
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 418px) {
+  .ContactForm {
+    display: none;
+  }
 }
