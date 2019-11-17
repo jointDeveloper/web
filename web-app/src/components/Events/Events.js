@@ -53,13 +53,13 @@ class Events extends React.Component {
 
   render() {
     return (
-      <div className="Events bg-navy-gradient">
+      <div className="Events bg-pink-yarrow-light">
         <div className="row d-flex justify-content-center">
-          <h1 className="font-title text-white">Eventos</h1>
+          <h1 className="font-title font-weight-bold text-smoke-strong">Eventos</h1>
         </div>
         <div className="row d-flex justify-content-center calendar-container">
           <BigCalendar
-            style={{height: '420px', color: 'white'}}
+            style={{height: '420px', color: '#3451b3'}}
             events={this.state.events}
             localizer={localizer}
             startAccessor="start"

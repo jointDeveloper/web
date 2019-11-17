@@ -1,6 +1,11 @@
 .Discover {
   min-height: 100vh;
   background: url(../../images/forma-redes-pink-bottom-completa.png) center bottom no-repeat;
+  padding: 15vh;
+}
+
+.Discover h2 {
+  padding-bottom: 5vh;
 }
 
 .Discover .discover-item i:hover {
@@ -58,7 +63,7 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .Discover .discover-item i {
-    font-size: 120px;
+    font-size: 130px;
   }  
   .Discover h2 {
     font-size: 35px;

@@ -46,7 +46,10 @@ class Discover extends Component {
     });
 
     return (
-      <div className="Discover container-fluid d-flex flex-row justify-content-center" id="discover">
+      <div className="Discover container-fluid justify-content-center" id="discover">
+        <div className="row d-flex justify-content-center text-navy font-weight-bold">
+          <h2 className="font-subtitle font-weight-bold">¡Descubre!</h2>
+        </div>
         <div className="row align-self-center">
           {items}
         </div>
