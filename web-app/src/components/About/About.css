@@ -9,12 +9,18 @@
   .About .what-we-do h3 {
     font-size: 23px;
   }
+  .About .what-we-do p {
+    font-size: 15px;
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .About .what-we-do h3 {
     font-size: 23px;
+  }
+  .About .what-we-do p {
+    font-size: 16px;
   }
 }
 
@@ -23,6 +29,9 @@
   .About .what-we-do h3 {
     font-size: 25px;
   }
+  .About .what-we-do p {
+    font-size: 18px;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -30,12 +39,18 @@
   .About .what-we-do h3 {
     font-size: 30px;
   }
+  .About .what-we-do p {
+    font-size: 20px;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .About .what-we-do h3 {
-    font-size: 35px;
+    font-size: 32px;
+  }
+  .About .what-we-do p {
+    font-size: 22px;
   }
 }
 
