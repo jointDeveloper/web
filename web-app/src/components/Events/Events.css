@@ -13,11 +13,11 @@
 
 .Events .rbc-calendar .rbc-btn-group button,
 .Events .rbc-calendar .rbc-off-range {
-  color: white;
+  color: black;
 }
 
 .Events .rbc-calendar .rbc-btn-group button:hover {
-  background-color: #ff9f00 !important;
+  background-color: #49b9ff !important;
   cursor: pointer;
 }
 
@@ -28,11 +28,11 @@
 
 .Events .rbc-calendar .rbc-today {
   border-style: double;
-  background-color: #ff9f00;
+  background-color: #49b9ff;
 }
 
 .Events .rbc-calendar .rbc-event {
-  background-color: #b37612;
+  background-color: #49b9ff;
 }
 
 .Events iframe {
