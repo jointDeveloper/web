@@ -15,3 +15,11 @@
 .SocialBar .icons-container a {
  cursor: pointer;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+  .SocialBar .icons-container img {
+    width: 40px;
+  }
+}
+

@@ -9,9 +9,22 @@
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width: 406.98px) {
   .Stats .img_participation {
-    width: 380px;
+    height: 300px;
+  }
+  .Stats .img_gender {
+    width: 180px;
+  }
+  .Stats h3 {
+    font-size: 20px;
+  }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 407px) and (max-width: 575.98px) {
+  .Stats .img_participation {
+    height: 360px;
   }
   .Stats .img_gender {
     width: 180px;

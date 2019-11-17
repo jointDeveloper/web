@@ -3,23 +3,45 @@
   padding: 8vh;
 }
 
-.Contact #utp {
-  width: 20vh;
-  height: auto;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 302.98px) {
+  .Contact #utp {
+    width: 120px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .Contact #sirius {
+    width: 180px;
+    height: auto;
+  }
 }
 
-.Contact #sirius {
-  width: 30vh;
-  height: auto;
-}
-
-.Contact .logos .col {
-  margin: 30px;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 303px) and (max-width: 1199.98px) {
+  .Contact #utp {
+    width: 150px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .Contact #sirius {
+    width: 200px;
+    height: auto;
+  }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .Contact .font-subtitle {
-    font-size: 65px;
+  .Contact #utp {
+    width: 150px;
+    height: auto;
+  }
+  
+  .Contact #sirius {
+    width: 250px;
+    height: auto;
+  }
+  
+  .Contact .logos .col {
+    margin: 30px;
   }
 }

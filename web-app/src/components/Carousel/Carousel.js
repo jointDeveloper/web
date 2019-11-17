@@ -26,8 +26,8 @@ class Carousel extends React.Component {
           <div className="carousel-inner row">
             { this.state.carouselImages }
           </div>
-          <a className="carousel-control-prev" href={ "#" + this.props.carouselId } role="button" data-slide="prev" onClick={(e) => this.props.isMultipleCarousel ? this.props.showPrevElement() : null }>
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <a className="carousel-control-prev" href={ "#" + this.props.carouselId } onClick={(e) => this.props.isMultipleCarousel ? this.props.showPrevElement() : null }>
+            <span className="carousel-control-prev-icon" role="button" data-slide="prev" aria-hidden="true"></span>
             <span className="sr-only">Previous</span>
           </a>
           <a className="carousel-control-next" href={ "#" + this.props.carouselId } role="button" data-slide="next" onClick={(e) => this.props.isMultipleCarousel ? this.props.showNextElement() : null} >

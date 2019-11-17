@@ -47,14 +47,14 @@ class Nav extends React.Component {
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a className="navbar-brand col-4" href="/">
+          <a className="navbar-brand" href="/">
             <div className="row">
               <div className="col">
                 <img src={this.props.image} alt="" className="img-fluid" />
               </div>
             </div>
           </a>
-          <div className="content text-white collapse navbar-collapse col-sm-12" id="navbarNav">
+          <div className="content text-white collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item active">
                 <a className="nav-link font-weight-bold text-white font-subtitle" href="../#about">¿Quiénes somos?</a>
