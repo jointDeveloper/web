@@ -36,14 +36,21 @@ class Nav extends React.Component {
         wrappedElement.className = classNameElement;
       });
     }
-
-
   };
+
+  shouldScroll() {
+    let uri = window.location.href;
+    if (uri.includes("members") || uri.includes("photoGallery") || 
+        uri.includes("events") || uri.includes("blog")) {
+      return "";
+    }
+    return "fixed-top";
+  }
 
   render() {
     return (
       <div className="Nav">
-        <nav className="navbar fixed-top navbar-expand-lg navbar-dark justify-content-between">
+        <nav className={"navbar navbar-expand-lg navbar-dark justify-content-between " + this.shouldScroll()}>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
