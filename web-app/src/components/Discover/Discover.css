@@ -30,6 +30,9 @@
   .Discover h2 {
     font-size: 23px;
   }
+  .Discover {
+    background: linear-gradient(0deg, #e6e7ee, #e6e7ee, #e6e7ee, #eac1e7);
+  }
 }
 
 /* Small devices (landscape phones, 576px and up) */

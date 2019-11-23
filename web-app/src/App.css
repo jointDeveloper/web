@@ -28,41 +28,6 @@
   src: url(./fonts/OpenSans/OpenSans-Italic.ttf);
 }
 
-/* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
-  .App .font-subtitle {
-    font-size: 30px;
-  }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .App .font-subtitle {
-    font-size: 35px;
-  }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
-  .App .font-subtitle {
-    font-size: 40px;
-  }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .App .font-subtitle {
-    font-size: 45px;
-  }
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  .App .font-subtitle {
-    font-size: 50px;
-  }
-}
-
 .App .font-subtitle {
   font-family: fontSubtitle;
 }
@@ -88,9 +53,46 @@
   font-family: highlightedParagraph;
 }
 
-.show-red {
-  background-color: red;
-  border-style: solid;
-  border-width: 1px 1px 1px 1px;
-  border-color: black;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .App .font-subtitle {
+    font-size: 30px;
+  }
+  .App .font-title {
+    font-size: 40px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .App .font-subtitle {
+    font-size: 35px;
+  }
+  .App .font-title {
+    font-size: 45px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .App .font-subtitle {
+    font-size: 40px;
+  }
+  .App .font-title {
+    font-size: 50px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .App .font-subtitle {
+    font-size: 45px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .App .font-subtitle {
+    font-size: 50px;
+  }
 }
