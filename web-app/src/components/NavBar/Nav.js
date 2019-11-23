@@ -18,7 +18,7 @@ class Nav extends React.Component {
   }
 
   trackScrolling = () => {
-    const isTop = window.scrollY < 100;
+    const isTop = window.scrollY < 10;
     if (isTop !== this.state.isTop) {
       this.setState({ isTop }, () => {
         let wrappedElement = document.getElementsByClassName('navbar')[0];

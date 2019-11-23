@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
-import Header from './components/Header/Header';
+import Nav from './components/NavBar/Nav';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import Members from './components/Members/Members';
@@ -15,7 +15,7 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
-          <Header image="./images/jointDev.png" />
+          <Nav image="./images/jointDev.png" />
 
           <Route exact path="/" component={ Home } />
           <Route path="/members" component={ withFirebase(Members) } />
