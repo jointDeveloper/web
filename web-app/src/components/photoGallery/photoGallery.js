@@ -163,7 +163,7 @@ class photoGallery extends React.Component {
     });
 
     return (
-      <div className="photoGallery bg-pink-yarrow-gradient">
+      <div className="photoGallery">
         <h1 className="font-title text-center text-white">Galería de Fotos</h1>
         <Carousel images={ imagesItems }
                   carouselId="carouselPhotos"
