@@ -72,7 +72,7 @@ class Members extends Component {
     return (
       <div className="Members">
         <div className="row d-flex justify-content-center">
-          <h1 className="font-title">Miembros</h1>
+          <h1 className="font-title text-white">Miembros</h1>
         </div>
         { rowsOfMembers }
       </div>

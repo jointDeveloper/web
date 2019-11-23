@@ -5,7 +5,7 @@ const imagesPath = 'images/stats/';
 class Stats extends React.Component {
   render() {
     return (
-      <div className="Stats bg-pink-yarrow-light" id="chart">
+      <div className="Stats" id="chart">
         <div className="row d-flex justify-content-center">
           <h2 className="font-subtitle font-weight-bold">Estadísticas</h2>
         </div>

@@ -1,4 +1,5 @@
 .Footer {
   min-height: 100vh;
   height: 100%;
+  background-image: linear-gradient(0deg, #cb65c4, #e6e7ee, #e6e7ee, #e6e7ee);
 }

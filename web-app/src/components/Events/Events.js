@@ -53,9 +53,9 @@ class Events extends React.Component {
 
   render() {
     return (
-      <div className="Events bg-pink-yarrow-light">
+      <div className="Events">
         <div className="row d-flex justify-content-center">
-          <h1 className="font-title font-weight-bold text-smoke-strong">Eventos</h1>
+          <h1 className="font-title font-weight-bold text-white">Eventos</h1>
         </div>
         <div className="row d-flex justify-content-center calendar-container">
           <BigCalendar
