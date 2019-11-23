@@ -5,7 +5,7 @@ class Nav extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isTop: true
+      lastYPosition: 10
     };
   }
 
@@ -18,39 +18,24 @@ class Nav extends React.Component {
   }
 
   trackScrolling = () => {
-    const isTop = window.scrollY < 10;
-    if (isTop !== this.state.isTop) {
-      this.setState({ isTop }, () => {
-        let wrappedElement = document.getElementsByClassName('navbar')[0];
-        let classNameElement = wrappedElement.className;
-        let classNameArray = classNameElement.split(" ");
-
-        if (!this.state.isTop) {
-          if (!classNameArray.includes("scrolled")) classNameElement += " scrolled";
-        } else {
-          if (classNameArray.includes("scrolled")) {
-            classNameArray.splice(-1, 1);
-            classNameElement = classNameArray.join(" ");
-          }
-        }
-        wrappedElement.className = classNameElement;
-      });
+    let wrappedElement = document.getElementsByClassName('navbar')[0];
+    let classNameElement = wrappedElement.className;
+    const currY = window.scrollY;
+    if (currY < this.state.lastYPosition) { // user is scrolling up
+      if (!classNameElement.includes("fixed-top")) { 
+        classNameElement += "fixed-top scrolled";
+      }
+    } else {
+      classNameElement = classNameElement.replace("fixed-top scrolled", "");
     }
+    wrappedElement.className = classNameElement;
+    this.setState({ lastYPosition: currY });
   };
-
-  shouldScroll() {
-    let uri = window.location.href;
-    if (uri.includes("members") || uri.includes("photoGallery") || 
-        uri.includes("events") || uri.includes("blog")) {
-      return "";
-    }
-    return "fixed-top";
-  }
 
   render() {
     return (
       <div className="Nav">
-        <nav className={"navbar navbar-expand-lg navbar-dark justify-content-between " + this.shouldScroll()}>
+        <nav className="navbar navbar-expand-lg navbar-dark justify-content-between ">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
