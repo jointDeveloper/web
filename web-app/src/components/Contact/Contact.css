@@ -1,6 +1,7 @@
 .Contact {
   height: 100%;
   padding: 8vh;
+  background-image: linear-gradient(90deg, #eac1e7, #e6e7ee, #e6e7ee, #e6e7ee, #eac1e7);
 }
 
 /* Extra small devices (portrait phones, less than 576px) */

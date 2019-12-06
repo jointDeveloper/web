@@ -2,7 +2,7 @@
   min-height: 100vh;
   background: url(../../images/forma-redes-pink-bottom-completa-left.png) left center no-repeat,
               url(../../images/forma-redes-pink-bottom-completa-right.png) right center no-repeat,
-              linear-gradient(0deg, #e6e7ee, #e6e7ee, #e6e7ee, #eac1e7);
+              linear-gradient(90deg, #eac1e7, #e6e7ee, #e6e7ee, #e6e7ee, #eac1e7);
   padding: 15vh;
 }
 
