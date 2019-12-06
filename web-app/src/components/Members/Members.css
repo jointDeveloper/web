@@ -3,8 +3,8 @@
   padding: 15vh;
   
   background: url(../../images/forma-redes-pink-top-completa.png) center top no-repeat,
-              url(../../images/forma-redes-pink-bottom-completa.png) center bottom no-repeat,
-              linear-gradient(0deg, #e6e7ee, #eac1e7, #e6e7ee, #e6e7ee, #e6e7ee, #461442);
+              /* url(../../images/forma-redes-pink-bottom-completa.png) center bottom no-repeat, */
+              linear-gradient(0deg, #e6e7ee, #e6e7ee, #e6e7ee,#461442, #461442);
 }
 
 .Members h1 {
@@ -19,6 +19,19 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  border: white;
+  border-style: solid;
+  box-shadow: 3px 3px 26px white;
+  margin-bottom: 2vh;
+}
+
+.Members .member-info {
+  background-color: white;
+  padding: 1em;
+  box-shadow: 3px 3px 26px white;
+  border-radius: 5px;
+  max-width: 33vh;
+  margin: 0 auto;
 }
 
 .Members i {
@@ -29,11 +42,10 @@
   margin-top: 5vh;
 }
 
-.Members #linkedin {
-  margin-right: 2vh;
+.Members .member-container {
+  margin: 2vh;
 }
 
-.Members .member-container {
-  /* max-width: 40vh;
-  margin-right: 7vh; */
+.Members #linkedin {
+  margin-right: 2vh;
 }
