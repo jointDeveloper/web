@@ -5,37 +5,22 @@
   margin-top: 20px;
 }
 
-.Carousel .carousel-control-next, .Carousel .carousel-control-prev {
-  max-width: 50px;
-}
-
 .Carousel .carousel-control-next {
-  right: -50px;
+  right: -15%;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  top: 36%;
 } 
 
 .Carousel .carousel-control-prev {
-  left: -80px;
+  left: -20%;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  top: 36%;
 }
 
 .Carousel .card {
   margin: 10px;
-}
-
-@media (max-width: 575.98px) {
-  .carousel-item-prev, .carousel-item.active {
-    width: 350px;
-  }
-}
-
-@media (min-width: 576px) and (max-width: 767.98px) {
-  .carousel-item-prev, .carousel-item.active {
-    width: 600px;
-  }
-}
-
-@media (min-width: 768px) {
-  .carousel-item-prev, .carousel-item.active {
-    height: 50vh;
-    width: auto;
-  }
 }

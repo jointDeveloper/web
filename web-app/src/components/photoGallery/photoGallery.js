@@ -51,7 +51,7 @@ class photoGallery extends React.Component {
         console.log("w ", this.getMax());
         if (this.state.events.length <= this.getMax()) {
           let item = (
-            <div className="card bg-smoke col event-container" key={"eventItem" + i} onClick={(e) => this.getCarouselImages(e, events[i])}>
+            <div className="card bg-pink-yarrow-light col event-container" key={"eventItem" + i} onClick={(e) => this.getCarouselImages(e, events[i])}>
               <img src={ events[i].imageSrc } className="card-img-top event-pic img-responsive rounded carousel-img" alt="..." />
               <div className="card-body">
                 <h5 className="card-title">{ events[i].title }</h5>
@@ -139,7 +139,7 @@ class photoGallery extends React.Component {
   getEventItem = (index) => {
     let events = this.state.events;
     let item = (
-      <div className="card bg-smoke col event-container active" key={"eventItem" + index} onClick={(e) => this.getCarouselImages(e, events[index])}>
+      <div className="card bg-pink-yarrow-light col event-container active" key={"eventItem" + index} onClick={(e) => this.getCarouselImages(e, events[index])}>
         <img src={ events[index].imageSrc } className="card-img-top event-pic img-responsive rounded carousel-img" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{ events[index].title }</h5>
@@ -164,7 +164,7 @@ class photoGallery extends React.Component {
 
     return (
       <div className="photoGallery">
-        <h1 className="font-title text-center text-white">Galería de Fotos</h1>
+        <h1 className="font-title text-center text-flame">Galería de Fotos</h1>
         <Carousel images={ imagesItems }
                   carouselId="carouselPhotos"
                   isMultipleCarousel={ false }
