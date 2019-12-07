@@ -1,10 +1,8 @@
 .Members {
   height: 100%;
   padding: 15vh;
-  
   background: url(../../images/forma-redes-pink-top-completa.png) center top no-repeat,
-              /* url(../../images/forma-redes-pink-bottom-completa.png) center bottom no-repeat, */
-              linear-gradient(0deg, #e6e7ee, #e6e7ee, #e6e7ee,#461442, #461442);
+            #c985b9
 }
 
 .Members h1 {
