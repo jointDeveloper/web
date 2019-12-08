@@ -1,7 +1,11 @@
 .ContactForm #submit {
   color: black;
   font-weight: bold;
-  border: 2px solid #000080;
+  border: 2px solid #cb65c4;
+}
+
+.ContactForm #submit:hover {
+  background-color: #eac1e7;
 }
 
 /* Small devices (landscape phones, 576px and up) */

@@ -36,7 +36,7 @@ class Header extends React.Component {
           </div>
           <div class="row">
             <div class="col">
-              <i className={"text-olympia-strong " + item.icon}></i>
+              <i className={"text-olympia " + item.icon}></i>
             </div>
           </div>
           <div class="row">
@@ -52,7 +52,7 @@ class Header extends React.Component {
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <h1 className="font-subtitle text-center text-navy font-weight-bold">¿Qué hacemos?</h1>
+              <h1 className="font-subtitle text-center text-dark font-weight-bold">¿Qué hacemos?</h1>
             </div>
           </div>
         </div>
