@@ -1,7 +1,62 @@
 .About {
   height: 100%;
   padding: 15vh;
-  background: url(../../images/forma-redes-pink-top-completa.png) center top no-repeat;
+  background: url(../../images/forma-redes-pink-top-completa.png) center top no-repeat,
+              linear-gradient(90deg, #eac1e7, white, white, white, white, white, #eac1e7);
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .About .what-we-do h3 {
+    font-size: 23px;
+  }
+  .About .what-we-do p {
+    font-size: 15px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .About .what-we-do h3 {
+    font-size: 23px;
+  }
+  .About .what-we-do p {
+    font-size: 16px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .About .what-we-do h3 {
+    font-size: 25px;
+  }
+  .About .what-we-do p {
+    font-size: 18px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .About .what-we-do h3 {
+    font-size: 30px;
+  }
+  .About .what-we-do p {
+    font-size: 20px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .About .what-we-do h3 {
+    font-size: 32px;
+  }
+  .About .what-we-do p {
+    font-size: 22px;
+  }
+}
+
+.About .what-we-do h3 {
+  font-weight: bold;
 }
 
 .About .col {
@@ -29,8 +84,4 @@
 .About .what-we-do img {
   padding-top: 5vh;
   height: 15vw;
-}
-
-.About .what-we-do img:hover {
-  color: red;
 }

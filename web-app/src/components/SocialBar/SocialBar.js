@@ -19,7 +19,7 @@ class SocialBar extends React.Component {
       return (
         <div className="col icons-container" key={index + "social"}>
           <a href={item.href} target="_blank" rel="noopener noreferrer">
-            <img src={this.props.iconsPath + item.a_class + ".png"} alt="" className="responsive-img" />
+            <img src={this.props.iconsPath + item.a_class + ".png"} alt="" className="responsive-img text-pink-light" />
           </a>
         </div>
       );
@@ -28,7 +28,7 @@ class SocialBar extends React.Component {
     return (
       <div className="SocialBar">
         <div className="row d-flex flex-row justify-content-center">
-          <h3 className="text-smoke-white font-quote-ananda">¡Síguenos en nuestras redes!</h3>
+          <h3 className="text-dark font-quote-ananda">¡Síguenos en nuestras redes!</h3>
         </div>
         <div className="row d-flex flex-row justify-content-center">
           { items }

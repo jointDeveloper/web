@@ -17,12 +17,23 @@ class photoGallery extends React.Component {
 
   componentDidMount() {
     this.getCoverPhotos();
-    window.addEventListener('mousemove', this.onMouseOver);
   }
 
   componentWillUnmount() {
     this.setState({ events: [], carouselImages: [], eventsItems: [] });
-    window.removeEventListener('mousemove', this.onMouseOver);
+  }
+
+  getMax = () => {
+    let w = window.innerWidth;
+    console.log(w);
+    if (w <= 989) {
+      console.log("w <= 989");
+      return 1;
+    }
+    if (w >= 672 && w <= 1532) {
+      return 2;
+    }
+    return 4;
   }
 
   getCoverPhotos = () => {
@@ -37,16 +48,14 @@ class photoGallery extends React.Component {
         this.setState({
           events: [...this.state.events, events[i]]
         });
-
-        if (this.state.events.length <= 4) {
+        console.log("w ", this.getMax());
+        if (this.state.events.length <= this.getMax()) {
           let item = (
-            <div className="col event-container active" key={"eventItem" + i}>
-                <div className="text-center image-container" onClick={(e) => this.getCarouselImages(e, events[i])}>
-                  <img className="event-pic img-responsive rounded carousel-img" alt="" src={ events[i].imageSrc } />
-                  <div className="text-centered font-weight-bold info-container hide">
-                    <p>{ events[i].title }</p>
-                    <p className="event-date">{ events[i].date }</p>
-                  </div>
+            <div className="card bg-pink-yarrow-light col event-container" key={"eventItem" + i} onClick={(e) => this.getCarouselImages(e, events[i])}>
+              <img src={ events[i].imageSrc } className="card-img-top event-pic img-responsive rounded carousel-img" alt="..." />
+              <div className="card-body">
+                <h5 className="card-title">{ events[i].title }</h5>
+                <p className="card-text">{ events[i].date }</p>
               </div>
             </div>
           );
@@ -59,45 +68,6 @@ class photoGallery extends React.Component {
       }).catch((error) => {
         console.error(error);
       });
-    }
-  }
-
-  onMouseOver = () => {
-    let imageEvent = document.getElementsByClassName('image-container');
-    for (let i = 0; i < imageEvent.length; i++) {
-      // console.log(imageEvent[i]);
-      imageEvent[i].addEventListener('mouseover', (event) => {
-        // console.log(imageEvent[i].childNodes[1]);
-        this.removeClassName(imageEvent[i].childNodes[1], "hide");
-        this.addClassName(imageEvent[i].childNodes[1], "show");
-      });
-
-      imageEvent[i].addEventListener('mouseout', (event) => {
-        // console.log(imageEvent[i].childNodes[1]);
-        this.removeClassName(imageEvent[i].childNodes[1], "show");
-        this.addClassName(imageEvent[i].childNodes[1], "hide");
-      });
-    }
-  }
-
-  addClassName = (element, className) => {
-    let classNameElement = element.className;
-    let classNameArray = classNameElement.split(" ");
-
-    if (!classNameArray.includes(className)) {
-      classNameElement += " " + className;
-      element.className = classNameElement;
-    }
-  }
-
-  removeClassName = (element, className) => {
-    let classNameElement = element.className;
-    let classNameArray = classNameElement.split(" ");
-
-    if (classNameArray.includes(className)) {
-      classNameArray.splice(-1, 1);
-      classNameElement = classNameArray.join(" ");
-      element.className = classNameElement;
     }
   }
 
@@ -169,13 +139,11 @@ class photoGallery extends React.Component {
   getEventItem = (index) => {
     let events = this.state.events;
     let item = (
-      <div className="col event-container active" key={"eventItem" + index}>
-          <div className="text-center image-container" onClick={(e) => this.getCarouselImages(e, events[index])}>
-            <img className="event-pic img-responsive rounded carousel-img" alt="" src={ events[index].imageSrc } />
-            <div className="text-centered font-weight-bold info-container hide">
-              <p>{ events[index].title }</p>
-              <p className="event-date">{ events[index].date }</p>
-            </div>
+      <div className="card bg-pink-yarrow-light col event-container active" key={"eventItem" + index} onClick={(e) => this.getCarouselImages(e, events[index])}>
+        <img src={ events[index].imageSrc } className="card-img-top event-pic img-responsive rounded carousel-img" alt="..." />
+        <div className="card-body">
+          <h5 className="card-title">{ events[index].title }</h5>
+          <p className="card-text">{ events[index].date }</p>
         </div>
       </div>
     );
@@ -195,8 +163,8 @@ class photoGallery extends React.Component {
     });
 
     return (
-      <div className="photoGallery bg-pink-yarrow-gradient">
-        <h1 className="font-title text-center text-white">Galería de Fotos</h1>
+      <div className="photoGallery">
+        <h1 className="font-title text-center text-flame">Galería de Fotos</h1>
         <Carousel images={ imagesItems }
                   carouselId="carouselPhotos"
                   isMultipleCarousel={ false }

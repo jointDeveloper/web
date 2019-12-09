@@ -10,8 +10,9 @@
 }
 
 .Blog .card {
-  margin: 5vh;
+  /* margin: 5vh; */
   border-style: outset;
+  border-block-color: black;
 }
 
 .Blog .btn-primary {
@@ -21,4 +22,21 @@
 .Blog .card a:hover {
   border-color: white;
   background-color: rgba(0,0,128,.3);
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .Blog {
+    background: linear-gradient(120deg, #461442,#49b9ff, #e6e7ee, #e6e7ee, #49b9ff,#461442);
+  }
+  .Blog .card {
+    margin-bottom: 10px;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .Blog .card {
+    margin: 10px;
+  }
 }

@@ -36,7 +36,7 @@ class Discover extends Component {
       return (
         <div className="col discover-item" key={index + "discover"}>
           <Link to={item.href}>
-            <h2 className="text-center text-olympia font-weight-bold">{item.title}</h2>
+            <h2 className="text-center text-navy font-weight-bold">{item.title}</h2>
             <div className="d-flex justify-content-center">
               <i className={"font-weight-bold " + item.class_color + " " + item.icon}></i>
             </div>
@@ -46,7 +46,10 @@ class Discover extends Component {
     });
 
     return (
-      <div className="Discover container-fluid d-flex flex-row justify-content-center" id="discover">
+      <div className="Discover container-fluid justify-content-center" id="discover">
+        <div className="row d-flex justify-content-center font-weight-bold">
+          <h2 className="font-subtitle text-dark font-weight-bold">¡Descubre!</h2>
+        </div>
         <div className="row align-self-center">
           {items}
         </div>

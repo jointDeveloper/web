@@ -13,12 +13,12 @@ class Footer extends React.Component {
 
   render() {
     return (
-      <div className="Footer bg-pink-yarrow" id="contact">
+      <div className="Footer" id="contact">
         <footer className="page-footer font-small teal">
           <Contact utp_img="./images/logo_utp.png" sirius_img="./images/logo_sirius.png" />
           <SocialBar iconsPath={ iconsPath } />
           <div className="" id="down-container">
-            <div className="footer-copyright text-center py-3 text-smoke-white">© jointDev 2019. Todos los derechos reservados</div>
+            <div className="footer-copyright text-center py-3 text-dark">© jointDev 2019. Todos los derechos reservados</div>
           </div>
         </footer>
       </div>

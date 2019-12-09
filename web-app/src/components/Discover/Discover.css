@@ -1,19 +1,17 @@
 .Discover {
-  height: 100vh;
-  background: url(../../images/forma-redes-pink-bottom-completa.png) center bottom no-repeat;
+  min-height: 100vh;
+  background: url(../../images/forma-redes-pink-bottom-completa-left.png) left center no-repeat,
+              url(../../images/forma-redes-pink-bottom-completa-right.png) right center no-repeat,
+              linear-gradient(90deg, #eac1e7, white, white, white, white, white, #eac1e7);
+  padding: 15vh;
 }
 
-.Discover .discover-item i {
-  font-size:20vh;
+.Discover h2 {
+  padding-bottom: 5vh;
 }
 
-.Discover .discover-item:hover i {
-  font-size:22vh;
-  color: #e4e4e4;
-}
-
-.Discover .discover-item:hover h2 {
-  font-size:5vh;
+.Discover .discover-item:hover {
+  background-color: #eac1e7;
 }
 
 .Discover a {
@@ -22,4 +20,68 @@
 
 .Discover .discover-item {
   margin: 5vh;
+  /* background-color:white; */
+  /* box-shadow: 3px 3px 26px white; */
+  border-radius: 30px;
+}
+
+.Discover .discover-item h2 {
+  padding-top: 1em;
+}
+
+.Discover .discover-item i {
+  padding-bottom: .1em;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .Discover .discover-item i {
+    font-size: 80px;
+  }
+  .Discover h2 {
+    font-size: 23px;
+  }
+  .Discover {
+    background: linear-gradient(90deg, #eac1e7, white, white, white, white, white, #eac1e7);
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .Discover .discover-item i {
+    font-size: 90px;
+  }
+  .Discover h2 {
+    font-size: 23px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .Discover .discover-item i {
+    font-size: 100px;
+  }
+  .Discover h2 {
+    font-size: 25px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .Discover .discover-item i {
+    font-size: 110px;
+  }
+  .Discover h2 {
+    font-size: 30px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .Discover .discover-item i {
+    font-size: 130px;
+  }  
+  .Discover h2 {
+    font-size: 35px;
+  }
 }

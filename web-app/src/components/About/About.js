@@ -29,18 +29,18 @@ class Header extends React.Component {
         <div className="col d-flex justify-content-center what-we-do" key={index + "whatWeDo"}>
           <div class="container">
             <div class="row">
-              <div class="col-sm-12">
+              <div class="col">
                 <h3 className="text-smoke-strong text-center">{item.title}</h3>
               </div>
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-12">
-              <i className={"text-olympia-strong " + item.icon}></i>
+            <div class="col">
+              <i className={"text-olympia " + item.icon}></i>
             </div>
           </div>
           <div class="row">
-            <div class="col-sm-12">
+            <div class="col">
               <p className="text-smoke-strong text-center">{item.text}</p>
             </div>
           </div>
@@ -52,7 +52,7 @@ class Header extends React.Component {
         <div class="container">
           <div class="row">
             <div class="col-lg-12">
-              <h1 className="font-subtitle text-center text-navy font-weight-bold">¿Qué hacemos?</h1>
+              <h1 className="font-subtitle text-center text-dark font-weight-bold">¿Qué hacemos?</h1>
             </div>
           </div>
         </div>

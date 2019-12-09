@@ -1,61 +1,48 @@
 .Contact {
-  padding: 15vh;
+  height: 100%;
+  padding: 8vh;
+  background-image: linear-gradient(90deg, #eac1e7, white, white, white, white, white, #eac1e7);
 }
 
-.Contact #left .row {
-  padding-bottom: 5vh;
-}
-
-.Contact #utp-container,
-.Contact #sirius-container {
-  width: 10vh;
-  height: auto;
-}
-
-.Contact #utp-container {
-  max-width: 25vh;
-}
-
-.Contact #utp {
-  width: 20vh;
-  height: auto;
-}
-
-.Contact #sirius {
-  width: 30vh;
-  height: auto;
-}
-
-.Contact #up-container {
-  height: 100vh;
-}
-
-@media (max-width: 1160px) {
-  .Contact .text_contact h5{
-    font-size: 55px;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 302.98px) {
+  .Contact #utp {
+    width: 120px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .Contact #sirius {
+    width: 180px;
+    height: auto;
   }
 }
 
-@media (max-width: 940px) {
-  .Contact .text_contact h5{
-    font-size: 45px;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (min-width: 303px) and (max-width: 1199.98px) {
+  .Contact #utp {
+    width: 150px;
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .Contact #sirius {
+    width: 200px;
+    height: auto;
   }
 }
 
-@media (max-width: 767px) {
-  .Contact .text_contact h5{
-    font-size: 65px;
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .Contact #utp {
+    width: 150px;
+    height: auto;
   }
-}
-
-@media (max-width: 580px) {
-  .Contact .text_contact h5{
-    font-size: 55px;
+  
+  .Contact #sirius {
+    width: 250px;
+    height: auto;
   }
-}
-
-@media (max-width: 485px) {
-  .Contact .text_contact h5{
-    font-size: 45px;
+  
+  .Contact .logos .col {
+    margin: 30px;
   }
 }

@@ -1,6 +1,8 @@
 .Events {
   height: 100%;
   padding: 15vh;
+  background: url(../../images/forma-redes-pink-top-completa.png) center top no-repeat,
+              url(../../images/forma-redes-pink-bottom-completa.png) center bottom no-repeat;
 }
 
 .Events h1 {
@@ -11,13 +13,8 @@
   padding-bottom: 10vh;
 }
 
-.Events .rbc-calendar .rbc-btn-group button,
-.Events .rbc-calendar .rbc-off-range {
-  color: white;
-}
-
 .Events .rbc-calendar .rbc-btn-group button:hover {
-  background-color: #ff9f00 !important;
+  background-color: #49b9ff !important;
   cursor: pointer;
 }
 
@@ -28,9 +25,14 @@
 
 .Events .rbc-calendar .rbc-today {
   border-style: double;
-  background-color: #ff9f00;
+  background-color: #49b9ff;
 }
 
 .Events .rbc-calendar .rbc-event {
-  background-color: #b37612;
+  background-color: #49b9ff;
+}
+
+.Events iframe {
+  height: 500px;
+  width: 1000px;
 }

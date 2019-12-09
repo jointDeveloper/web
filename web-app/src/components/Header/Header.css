@@ -3,6 +3,7 @@
   width: auto;
   height: 100vh;
   background-image: url(../../images/bg.jpg);
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   display: block;
@@ -13,7 +14,42 @@
   background-blend-mode: multiply;
 }
 
-.Header #mision {
-  font-size: 2vw;
-  padding: 15vh;
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+  .Header #mision {
+    font-size: 15px;
+    padding: 8vw;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .Header #mision {
+    font-size: 15px;
+    padding: 9vw;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .Header #mision {
+    font-size: 18px;
+    padding: 11vw;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .Header #mision {
+    font-size: 20px;
+    padding: 13vw;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .Header #mision {
+    font-size: 25px;
+    padding: 15vw;
+  }
 }
