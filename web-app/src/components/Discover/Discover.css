@@ -2,7 +2,7 @@
   min-height: 100vh;
   background: url(../../images/forma-redes-pink-bottom-completa-left.png) left center no-repeat,
               url(../../images/forma-redes-pink-bottom-completa-right.png) right center no-repeat,
-              linear-gradient(0deg, #e6e7ee, #e6e7ee, #e6e7ee, #eac1e7);
+              linear-gradient(90deg, #eac1e7, white, white, white, white, white, #eac1e7);
   padding: 15vh;
 }
 
@@ -10,8 +10,8 @@
   padding-bottom: 5vh;
 }
 
-.Discover .discover-item i:hover {
-  color: #e4e4e4;
+.Discover .discover-item:hover {
+  background-color: #eac1e7;
 }
 
 .Discover a {
@@ -20,6 +20,17 @@
 
 .Discover .discover-item {
   margin: 5vh;
+  /* background-color:white; */
+  /* box-shadow: 3px 3px 26px white; */
+  border-radius: 30px;
+}
+
+.Discover .discover-item h2 {
+  padding-top: 1em;
+}
+
+.Discover .discover-item i {
+  padding-bottom: .1em;
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -31,7 +42,7 @@
     font-size: 23px;
   }
   .Discover {
-    background: linear-gradient(0deg, #e6e7ee, #e6e7ee, #e6e7ee, #eac1e7);
+    background: linear-gradient(90deg, #eac1e7, white, white, white, white, white, #eac1e7);
   }
 }
 

@@ -39,16 +39,18 @@ class Members extends Component {
   render() {
     let members = this.state.members.map((member, index) => {
       return (
-        <div className="col member-container" key={index + "member"}>
+        <div className="col member-container text-center" key={index + "member"}>
           <img className="member-pic rounded-circle img-responsive" alt="" src={ member.image_url } />
-          <p className="font-weight-bold text-center font-highlighted-paragraph text-olympia">{member.name}</p>
-          <div className="row d-flex justify-content-center">
-            { member.linkedin !== "" ? (<a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-olympia" id="linkedin">
-                                        <i className="fab fa-linkedin" aria-hidden="true"></i>
-                                       </a>) : null }
-            { member.github !== "" ? (<a href={member.github} target="_blank" rel="noopener noreferrer" className="text-olympia">
-                                       <i className="fab fa-github-alt" aria-hidden="true"></i>
-                                     </a>) : null }
+          <div className="member-info">
+            <p className="font-weight-bold text-center text-dark font-quote-ananda">{member.name}</p>
+            <div className="row d-flex justify-content-center">
+              { member.linkedin !== "" ? (<a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="text-navy" id="linkedin">
+                                          <i className="fab fa-linkedin" aria-hidden="true"></i>
+                                        </a>) : null }
+              { member.github !== "" ? (<a href={member.github} target="_blank" rel="noopener noreferrer" className="text-navy">
+                                        <i className="fab fa-github-alt" aria-hidden="true"></i>
+                                      </a>) : null }
+            </div>
           </div>
         </div>
       );

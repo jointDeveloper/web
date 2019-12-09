@@ -2,7 +2,7 @@
   height: 100%;
   padding: 15vh;
   background: url(../../images/forma-redes-pink-top-completa.png) center top no-repeat,
-              linear-gradient(0deg, #49b9ff, #e6e7ee, #e6e7ee, #eac1e7);
+              linear-gradient(90deg, #eac1e7, white, white, white, white, white, #eac1e7);
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -84,8 +84,4 @@
 .About .what-we-do img {
   padding-top: 5vh;
   height: 15vw;
-}
-
-.About .what-we-do img:hover {
-  color: red;
 }
