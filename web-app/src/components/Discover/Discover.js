@@ -50,7 +50,7 @@ class Discover extends Component {
         <div className="row d-flex justify-content-center font-weight-bold">
           <h2 className="font-subtitle text-dark font-weight-bold">¡Descubre!</h2>
         </div>
-        <div className="row align-self-center">
+        <div className="row align-self-center d-flex justify-content-center">
           {items}
         </div>
       </div>
