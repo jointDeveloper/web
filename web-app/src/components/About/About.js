@@ -27,7 +27,7 @@ class Header extends React.Component {
     const items = whatWeDo.map((item, index) => {
       return (
         <div className="col d-flex justify-content-center what-we-do" key={index + "whatWeDo"}>
-          <div class="container">
+          <div class="container d-flex justify-content-center">
             <div class="row">
               <div class="col">
                 <h3 className="text-smoke-strong text-center">{item.title}</h3>

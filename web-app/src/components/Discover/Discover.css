@@ -19,10 +19,9 @@
 }
 
 .Discover .discover-item {
-  margin: 5vh;
-  /* background-color:white; */
-  /* box-shadow: 3px 3px 26px white; */
   border-radius: 30px;
+  max-width: 20em;
+  margin: 5vw;
 }
 
 .Discover .discover-item h2 {
