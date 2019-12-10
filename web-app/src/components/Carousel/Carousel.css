@@ -1,26 +1,33 @@
 .Carousel .carousel-img {
-  height: 50vh;
+  height: 35vw;
   width: auto;
   margin-bottom: 0;
   margin-top: 20px;
 }
 
-.Carousel .carousel-control-next {
-  right: -15%;
-  border-radius: 50%;
-  height: 100px;
-  width: 100px;
-  top: 36%;
-} 
-
+.Carousel .carousel-control-next,
 .Carousel .carousel-control-prev {
-  left: -20%;
+  height: 3em;
+  width: 3em;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
   top: 36%;
 }
 
-.Carousel .card {
-  margin: 10px;
+.Carousel .carousel-control-next {
+  right: -10%;
+}
+
+.Carousel .carousel-control-prev {
+  left: -18%;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .Carousel .carousel-control-next {
+    right: -6%;
+  }
+
+  .Carousel .carousel-control-prev {
+    left: -11%;
+  }
 }
