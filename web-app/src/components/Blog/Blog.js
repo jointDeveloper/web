@@ -35,7 +35,7 @@ class Blog extends React.Component {
 
     let items = this.state.posts.map((post, index) => {
       return (
-        <div key={index + "post"} className="col-sm-6">
+        <div key={index + "post"} className="col-md-6 d-flex justify-content-center">
           <div className="card">
             <div className="card-body">
               <h5 className="card-title font-highlighted-paragraph">{post.title}</h5>
@@ -52,7 +52,7 @@ class Blog extends React.Component {
         <div className="row d-flex justify-content-center">
           <h1 className="font-title">Blog</h1>
         </div>
-        <div className="row d-flex justify-content-center">
+        <div className="row">
           {items}
         </div>
       </div>
